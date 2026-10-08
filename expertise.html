@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="fr" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Architecture Web &amp; Optimisation SEO / IA (GEO) — Expertise Nexora Lille</title>
+<meta name="description" content="Découvrez nos normes techniques : code HTML/CSS éco-conçu, accessibilité WCAG, score Core Web Vitals 100/100 et structuration de données pour le SEO et l'IA (GEO).">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="theme-color" content="#08111f">
+<meta name="author" content="Nexora">
+<link rel="canonical" href="https://nexora.fr/expertise/architecture-seo-ia">
+
+<!-- Open Graph / Social -->
+<meta property="og:type" content="article">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Nexora">
+<meta property="og:title" content="Architecture Web &amp; Optimisation SEO / IA — Expertise Nexora">
+<meta property="og:description" content="Normes techniques rigoureuses : sobriété numérique, temps de chargement ultra-rapides et balisage sémantique avancé.">
+<meta property="og:url" content="https://nexora.fr/expertise/architecture-seo-ia">
+<meta property="og:image" content="https://nexora.fr/og-expertise-seo.jpg">
+
+<!-- Security & CSP -->
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'">
+
+<!-- Feuille de style commune -->
+<link rel="stylesheet" href="theme.css">
+
+<!-- Schema.org : TechArticle + BreadcrumbList -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://nexora.fr/expertise/architecture-seo-ia#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Accueil",
+          "item": "https://nexora.fr/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Expertises",
+          "item": "https://nexora.fr/#expertise"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Architecture SEO & IA (GEO)"
+        }
+      ]
+    },
+    {
+      "@type": "TechArticle",
+      "@id": "https://nexora.fr/expertise/architecture-seo-ia#article",
+      "headline": "Méthodologie d'architecture Web, Qualité de Code et Référencement par l'IA (Generative Engine Optimization)",
+      "description": "Analyse approfondie des standards d'ingénierie web appliqués par Nexora pour garantir la vélocité, l'accessibilité et la découvrabilité par les modèles de langage (LLM).",
+      "author": { "@id": "https://nexora.fr/#organization" },
+      "publisher": { "@id": "https://nexora.fr/#organization" },
+      "inLanguage": "fr-FR",
+      "about": [
+        { "@type": "Thing", "name": "Generative Engine Optimization (GEO)" },
+        { "@type": "Thing", "name": "Core Web Vitals" },
+        { "@type": "Thing", "name": "Web Accessibility (WCAG)" }
+      ]
+    }
+  ]
+}
+</script>
+
+<style>
+/* Styles propres à cette page uniquement — le reste (breadcrumb, page-hero,
+   metrics-grid, content-layout, sidebar, side-card, btn-full, main-content)
+   est mutualisé dans theme.css pour éviter la duplication entre pages. */
+
+/* Cette page affiche 4 indicateurs au lieu des 3 par défaut de theme.css */
+.metrics-grid { grid-template-columns: repeat(4, 1fr); max-width: none; }
+
+/* Bloc code / spécifications techniques */
+.spec-box {
+  background: #0d1626;
+  color: #d0dbe7;
+  border-radius: 16px;
+  padding: 24px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 13px;
+  margin: 25px 0;
+  border: 1px solid rgba(255, 255, 255, .08);
+}
+.spec-box span.key { color: var(--blue); }
+.spec-box span.val { color: var(--gold-deep); }
+
+/* Liste verticale des piliers (distincte de .pillars-grid, qui est en 3 colonnes) */
+.pillars-list { display: grid; grid-template-columns: 1fr; gap: 20px; margin-top: 30px; }
+.pillar-card h3 { display: flex; align-items: center; gap: 10px; }
+
+@media (max-width: 900px) {
+  .metrics-grid { grid-template-columns: 1fr 1fr; }
+}
+</style>
+</head>
+<body>
+
+<a class="skip" href="#main">Aller au contenu</a>
+
+<!-- Header fixe avec la barre complète -->
+<header class="site-header">
+  <div class="wrap">
+    <div class="nav">
+      <a class="brand" href="index.html" aria-label="Nexora — Retour accueil">
+        <span class="mark" aria-hidden="true"></span>
+        Nexora
+      </a>
+      
+      <!-- Menu complet conforme au thème -->
+      <nav class="nav-links" id="navLinks" aria-label="Navigation principale">
+        <a href="index.html#services">Services</a>
+        <a href="index.html#expertise">Expertise</a>
+        <a href="index.html#methode">Méthode</a>
+        <a href="index.html#equipe">Équipe</a>
+        <a href="index.html#realisations">Réalisations</a>
+	<a href="index.html#contact">Contact</a>
+      </nav>
+
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <a class="nav-cta" href="index.html#contact">Évaluer votre site ↗</a>
+        <button class="menu" type="button" id="menuBtn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navLinks">☰</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <!-- Hero Section & Fil d'Ariane -->
+  <section class="page-hero accent-blue">
+    <div class="wrap">
+      <nav class="breadcrumb" aria-label="Fil d'Ariane">
+        <a href="index.html" title="Retourner à la page d'accueil principale">Accueil</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <a href="index.html#expertise" title="Découvrir l'ensemble de nos expertises">Expertise</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <span class="current" aria-current="page">Architecture SEO &amp; IA</span>
+      </nav>
+
+      <div class="kicker">Expertise Technique · Standards Web</div>
+      <h1>Architecture Web &amp; Optimisation SEO / IA (GEO)</h1>
+      <p class="lead">Nous concevons des infrastructures numériques épurées et structurées, pensées pour offrir un temps de chargement instantané et une compréhensibilité totale par les algorithmes de recherche modernes.</p>
+
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <span class="val">100/100</span>
+          <span class="lbl">Objectif Core Web Vitals</span>
+        </div>
+        <div class="metric-card">
+          <span class="val">&lt; 0.8s</span>
+          <span class="lbl">Largest Contentful Paint (LCP)</span>
+        </div>
+        <div class="metric-card">
+          <span class="val">100%</span>
+          <span class="lbl">Balisage Schema.org &amp; GEO</span>
+        </div>
+        <div class="metric-card">
+          <span class="val">AA / AAA</span>
+          <span class="lbl">Accessibilité WCAG 2.1</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contenu Principal & Sidebar -->
+  <div class="wrap content-layout">
+    <article class="main-content">
+      <h2>1. Generative Engine Optimization (GEO) &amp; Visibilité IA</h2>
+      <p>Les moteurs de recherche traditionnels évoluent vers des moteurs d'attributions synthétiques (ChatGPT, Perplexity, Google SGE/Overviews). Pour qu'une entreprise soit citée comme référence par une IA, son code doit véhiculer des faits structurés indiscutables.</p>
+      
+      <div class="spec-box">
+        // Extrait du standard de données structurées appliqué par Nexora<br>
+        <span class="key">"@context"</span>: <span class="val">"https://schema.org"</span>,<br>
+        <span class="key">"@type"</span>: <span class="val">"Organization"</span>,<br>
+        <span class="key">"knowsAbout"</span>: [<span class="val">"Web Performance"</span>, <span class="val">"Accessibility"</span>, <span class="val">"GEO Optimization"</span>],<br>
+        <span class="key">"mainEntityOfPage"</span>: <span class="val">"https://nexora.fr"</span>
+      </div>
+
+      <h2>2. Les 3 Piliers de notre Qualité de Code</h2>
+      <div class="pillars-list">
+        <div class="pillar-card">
+          <h3>Sobriété &amp; Zéro Dépendance Inutile <span class="badge-pill">Performance</span></h3>
+          <p>Nous bannissons les frameworks surdimensionnés lorsque du HTML5 sémantique, du CSS moderne et du JavaScript vanille suffisent. Résultat : des pages pesant moins de 200 Ko, réduisant le temps de chargement et l'empreinte carbone.</p>
+        </div>
+
+        <div class="pillar-card">
+          <h3>Accessibilité Native (WCAG 2.1) <span class="badge-pill">Inclusion</span></h3>
+          <p>Chaque composant interactif est navigable au clavier, respecte les contrastes de couleurs stricts (4.5:1 minimum) et fournit les attributs ARIA appropriés pour les lecteurs d'écran.</p>
+        </div>
+
+        <div class="pillar-card">
+          <h3>Architecture Sécurisée &amp; CSP Strict <span class="badge-pill">Sécurité</span></h3>
+          <p>Mise en place de politiques de sécurité renforcées (Content Security Policy), protection XSS natif, en-têtes HTTP de sécurité et formulaires protégés contre le spam sans dégrader l'expérience utilisateur.</p>
+        </div>
+      </div>
+
+      <h2>3. Audit &amp; Refonte de Code Existant</h2>
+      <p>Si vous disposez déjà d'un site web souffrant de lenteurs ou d'un déficit de visibilité, nous intervenons pour refondre le code source, éliminer le JavaScript bloquant et restructurer l'arborescence sémantique sans perte de trafic.</p>
+    </article>
+
+    <!-- Sidebar Sticky -->
+    <aside class="sidebar">
+      <div class="side-card">
+        <h3>Besoin d'un audit de code ou SEO ?</h3>
+        <p>Obtenez une analyse technique de votre site : performance Core Web Vitals, conformité IA et accessibilité.</p>
+        <a class="btn-full" href="index.html#contact">Demander un audit ↗</a>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div>
+      <strong style="color: var(--white)">Nexora</strong> · Stratégie, design &amp; technologie · Lille, France
+    </div>
+    <div class="footer-links">
+      <a href="index.html#services">Services</a>
+      <a href="index.html#expertise">Expertise</a>
+      <a href="index.html#methode">Méthode</a>
+      <a href="index.html#equipe">Équipe</a>
+      <a href="index.html#realisations">Réalisations</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/site.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="fr" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Intelligence Artificielle — Nexora | Agence digitale Lille</title>
+<meta name="description" content="Déploiement de solutions IA sur mesure : intégration de LLM, agents autonomes, architectures RAG et automatisation souveraine de vos processus métiers.">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="theme-color" content="#08111f">
+<link rel="canonical" href="https://nexora.fr/intelligence-artificielle.html">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Nexora">
+<meta property="og:title" content="Intelligence Artificielle — Nexora">
+<meta property="og:description" content="Agents IA sur mesure, architectures RAG et automatisation des workflows métiers dans le respect strict de la confidentialité de vos données.">
+<meta property="og:url" content="https://nexora.fr/intelligence-artificielle.html">
+<meta property="og:image" content="https://nexora.fr/og-image.jpg">
+
+<!-- Security -->
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'">
+
+<link rel="stylesheet" href="theme.css">
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "name": "Solutions & Intégration d'Intelligence Artificielle",
+      "provider": {
+        "@id": "https://nexora.fr/#organization"
+      },
+      "serviceType": "Artificial Intelligence Consulting & Engineering",
+      "description": "Développement d'applications IA, assistants métiers sécurisés, RAG et fine-tuning de modèles pour entreprises.",
+      "areaServed": "France"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Nos données seront-elles utilisées pour entraîner des modèles publics ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non, c’est une priorité absolue. Nous utilisons des API d’entreprise à confidentialité garantie ou nous déployons des modèles open-source sur vos propres serveurs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Combien de temps faut-il pour déployer un premier POC ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "En général, un Proof of Concept (POC) fonctionnel est prêt en 2 à 4 semaines afin de valider la faisabilité technique et le ROI métier avant tout déploiement massif."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment éviter les hallucinations des modèles de langage ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Grâce aux architectures RAG : l’IA répond exclusivement à partir des documents de référence fournis et cite systématiquement la source de son information."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Accompagnez-vous au changement et à la prise en main ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui, nous formons directement vos équipes opérationnelles à l’ingénierie de prompt (Prompt Engineering) et aux bonnes pratiques d’utilisation de leurs nouveaux outils."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<style>
+/* Styles spécifiques à la page Intelligence Artificielle */
+.brand .mark {
+  background: linear-gradient(135deg, var(--violet), var(--cyan));
+}
+
+/* Terminal / RAG */
+.terminal-window {
+  background: #030712;
+  border: 1px solid rgba(255, 255, 255, .12);
+  border-radius: 16px;
+  padding: 24px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 13px;
+  margin-top: 24px;
+  line-height: 1.8;
+}
+
+.term-line {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.term-tag {
+  background: rgba(157, 140, 255, .2);
+  color: var(--violet);
+  padding: 1px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.term-text { color: #d1d5db; }
+.term-highlight { color: var(--cyan); }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="nav">
+      <a class="brand" href="index.html" aria-label="Nexora — Accueil">
+        <span class="mark" aria-hidden="true"></span>
+        Nexora
+      </a>
+      <nav class="nav-links" id="navLinks" aria-label="Navigation principale">
+        <a href="index.html#services">Services</a>
+        <a href="index.html#expertise">Expertise</a>
+        <a href="index.html#methode">Méthode</a>
+        <a href="index.html#equipe">Équipe</a>
+        <a href="index.html#realisations">Réalisations</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <a class="nav-cta" href="index.html#contact">Évaluer un cas d'usage IA ↗</a>
+      <button class="menu" type="button" id="menuBtn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navLinks">☰</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <!-- Hero -->
+  <section class="page-hero accent-violet">
+    <div class="wrap">
+      <nav class="breadcrumb" aria-label="Fil d'Ariane">
+        <a href="index.html" title="Retourner à l'accueil">Accueil</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <a href="index.html#services" title="Voir tous les services">Services</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <span class="current" aria-current="page">Intelligence Artificielle</span>
+      </nav>
+
+      <div class="kicker">AGENTS, RAG &amp; INGÉNIERIE DE DONNÉES</div>
+      <h1>L’Intelligence Artificielle intégrée au cœur de vos métiers.</h1>
+      <p class="page-hero-lead">Loin des effets de mode et des gadgets, nous développons des architectures IA utiles, sécurisées et souveraines pour automatiser vos opérations et démultiplier la productivité de vos équipes.</p>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <b>100%</b>
+          <span>Conformité RGPD &amp; Hébergement souverain</span>
+        </div>
+        <div class="stat-item">
+          <b>RAG Sur mesure</b>
+          <span>Analyse temps réel de vos bases documentaires</span>
+        </div>
+        <div class="stat-item">
+          <b>0 fuite</b>
+          <span>Modèles cloisonnés sans réentraînement public</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Architecture RAG -->
+  <section class="wrap">
+    <div class="architecture-section">
+      <div class="kicker" style="color: var(--violet);">DÉPLOIEMENT TECHNIQUE</div>
+      <h2 style="color: var(--white);">Architecture RAG (Retrieval-Augmented Generation)</h2>
+      <p style="color: #a3b3c7; max-width: 680px;">Nous connectons les modèles de langage à la mémoire vivante de votre entreprise (ERP, GED, bases de données) sans jamais exposer vos données sensibles à l’extérieur.</p>
+
+      <div class="terminal-window">
+        <div class="term-line">
+          <span class="term-tag">01. INGESTION</span>
+          <span class="term-text">Vectorisation sécurisée de vos documents confidentiels (PDF, API, SQL).</span>
+        </div>
+        <div class="term-line">
+          <span class="term-tag">02. RECHERCHE</span>
+          <span class="term-text">Recherche sémantique haute précision dans <span class="term-highlight">VectorDB (pgvector / Qdrant)</span>.</span>
+        </div>
+        <div class="term-line">
+          <span class="term-tag">03. SYNTHÈSE</span>
+          <span class="term-text">Génération de réponses fiables avec sources et citations vérifiables par l’agent IA.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cas d'usage -->
+  <section class="section">
+    <div class="wrap">
+      <div class="kicker">APPLICATIONS CONCRÈTES</div>
+      <h2>Où l’IA apporte-t-elle de la vraie valeur ?</h2>
+
+      <div class="usecases-grid">
+        <article class="usecase-card">
+          <div>
+            <h3>Assistants Métiers Intelligents</h3>
+            <p>Mettez à disposition de vos collaborateurs un copilote capable d’interroger instantanément l’ensemble de vos bases de connaissances internes.</p>
+          </div>
+          <span class="badge">Gain de temps opérationnel</span>
+        </article>
+        <article class="usecase-card">
+          <div>
+            <h3>Traitement d’Actes &amp; Documents</h3>
+            <p>Extraction automatique de données structurées depuis des factures, contrats ou rapports complexes avec un taux de précision contrôlé.</p>
+          </div>
+          <span class="badge">Automatisation &amp; Zéro erreur</span>
+        </article>
+        <article class="usecase-card">
+          <div>
+            <h3>Agents Conversationnels B2B</h3>
+            <p>Agents de service client qualifiant les demandes, générant des devis préliminaires et synchronisant les données directement dans votre CRM.</p>
+          </div>
+          <span class="badge">Conversion &amp; Support 24/7</span>
+        </article>
+      </div>
+
+      <div class="security-card">
+        <div>
+          <h3 style="margin:0 0 10px; font-size:22px;">Sécurité &amp; Souveraineté des Données</h3>
+          <p style="margin:0; color:#a3b3c7; font-size:14px;">Vos données de santé, financières ou stratégiques restent exclusivement sur des infrastructures sécurisées en France ou en Europe (Mistral AI, hébergements SecNumCloud).</p>
+        </div>
+        <div style="text-align: right;">
+          <span class="badge" style="background: rgba(157, 140, 255, .2); color: var(--violet); border: 1px solid rgba(157, 140, 255, .4);">RGPD &amp; ISO 27001 Ready</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" style="background: var(--white); border-top: 1px solid var(--line);">
+    <div class="wrap">
+      <div class="kicker">QUESTIONS FRÉQUENTES</div>
+      <h2>Tout savoir sur l’intégration de l’IA en entreprise.</h2>
+
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3>Nos données seront-elles utilisées pour entraîner des modèles publics ?</h3>
+          <p>Non, c’est une priorité absolue. Nous utilisons des API d’entreprise à confidentialité garantie ou nous déployons des modèles open-source sur vos propres serveurs.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Combien de temps faut-il pour déployer un premier POC ?</h3>
+          <p>En général, un Proof of Concept (POC) fonctionnel est prêt en 2 à 4 semaines afin de valider la faisabilité technique et le ROI métier avant tout déploiement massif.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Comment éviter les hallucinations des modèles de langage ?</h3>
+          <p>Grâce aux architectures RAG : l’IA répond exclusivement à partir des documents de référence fournis et cite systématiquement la source de son information.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Accompagnez-vous au changement et à la prise en main ?</h3>
+          <p>Oui, nous formons directement vos équipes opérationnelles à l’ingénierie de prompt (Prompt Engineering) et aux bonnes pratiques d’utilisation de leurs nouveaux outils.</p>
+        </div>
+      </div>
+
+      <div class="cta-box">
+        <h2>Un projet ou une idée d’automatisation IA ?</h2>
+        <p>Étudions ensemble la faisabilité technique et l’impact économique pour votre organisation.</p>
+        <a class="btn btn-light" href="index.html#contact">Planifier un échange technique ↗</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div>
+      <strong style="color:var(--white)">Nexora</strong> · Stratégie, design &amp; technologie · Lille, France
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Accueil</a>
+      <a href="index.html#services">Services</a>
+      <a href="intelligence-artificielle.html">Intelligence Artificielle</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/site.js" defer></script>
+</body>
+</html>
