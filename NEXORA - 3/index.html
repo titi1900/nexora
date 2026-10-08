@@ -1,0 +1,956 @@
+<!doctype html>
+<html lang="fr" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nexora — Stratégie, design & technologie | Agence digitale Lille</title>
+<meta name="description" content="Nexora, agence digitale à Lille : stratégie, design UX/UI, développement web, SEO, data et intelligence artificielle. Sites rapides, clairs et performants.">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="theme-color" content="#08111f">
+<meta name="author" content="Nexora">
+<meta name="publisher" content="Nexora">
+<link rel="canonical" href="https://nexora.fr/">
+
+<!-- Theme CSS -->
+<link rel="stylesheet" href="theme.css">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Nexora">
+<meta property="og:title" content="Nexora — Stratégie, design & technologie">
+<meta property="og:description" content="Des expériences digitales rapides, claires et performantes. Agence digitale à Lille : stratégie, design, dev, SEO et IA.">
+<meta property="og:url" content="https://nexora.fr/">
+<meta property="og:image" content="https://nexora.fr/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Nexora — Agence digitale stratégie design technologie">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Nexora — Stratégie, design & technologie">
+<meta name="twitter:description" content="Agence digitale à Lille. Sites et produits numériques rapides, désirables et compréhensibles.">
+<meta name="twitter:image" content="https://nexora.fr/og-image.jpg">
+
+<!-- Security & privacy hints -->
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'">
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://nexora.fr/#organization",
+      "name": "Nexora",
+      "url": "https://nexora.fr/",
+      "logo": "https://nexora.fr/logo.png",
+      "image": "https://nexora.fr/og-image.jpg",
+      "description": "Agence digitale spécialisée en stratégie, design UX/UI, développement web, SEO, data et intelligence artificielle. Basée à Lille, France.",
+      "email": "bonjour@nexora.fr",
+      "areaServed": {
+        "@type": "Country",
+        "name": "France"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Lille",
+        "addressCountry": "FR"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "email": "bonjour@nexora.fr",
+        "availableLanguage": ["French"]
+      },
+      "knowsAbout": [
+        "stratégie digitale",
+        "design UX/UI",
+        "développement web",
+        "SEO",
+        "visibilité IA",
+        "intelligence artificielle",
+        "data analytics",
+        "Core Web Vitals"
+      ],
+      "sameAs": []
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://nexora.fr/#website",
+      "url": "https://nexora.fr/",
+      "name": "Nexora",
+      "description": "Agence digitale — stratégie, design & technologie",
+      "publisher": { "@id": "https://nexora.fr/#organization" },
+      "inLanguage": "fr-FR"
+    }
+  ]
+}
+</script>
+
+<style>
+/* ============================================================
+   Styles spécifiques à la page d'accueil (Index)
+   Le reste est géré par theme.css
+   ============================================================ */
+
+/* Hero */
+.hero {
+  min-height: 850px;
+  display: grid;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 78% 28%, rgba(104, 216, 255, .22), transparent 25%),
+    radial-gradient(circle at 18% 18%, rgba(157, 140, 255, .18), transparent 28%),
+    linear-gradient(135deg, #07101e, #0c1a2f 58%, #07101e);
+  color: #fff;
+  content-visibility: auto;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, .035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, .035) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: linear-gradient(to bottom, #000, transparent 90%);
+  pointer-events: none;
+}
+.hero-inner {
+  position: relative;
+  z-index: 1;
+  padding: 150px 0 80px;
+  display: grid;
+  grid-template-columns: 1.08fr .92fr;
+  gap: 60px;
+  align-items: center;
+}
+.hero .eyebrow {
+  color: #91a4bd;
+}
+.hero h1 {
+  font-size: clamp(48px, 7vw, 86px);
+  line-height: .98;
+  letter-spacing: -.065em;
+  max-width: 800px;
+  margin: 20px 0;
+}
+.hero-lead {
+  font-size: 18px;
+  line-height: 1.65;
+  color: #b9c5d6;
+  max-width: 650px;
+  margin: 0;
+}
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 32px;
+}
+.hero-note {
+  display: flex;
+  gap: 28px;
+  margin-top: 48px;
+  padding-top: 22px;
+  border-top: 1px solid rgba(255, 255, 255, .12);
+  color: #91a0b3;
+  font-size: 12px;
+}
+.hero-note strong {
+  display: block;
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+
+/* Orbital visual */
+.orbital {
+  position: relative;
+  min-height: 490px;
+  display: grid;
+  place-items: center;
+}
+.ring {
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, .12);
+  border-radius: 50%;
+  width: 380px;
+  height: 380px;
+}
+.ring.r2 { width: 270px; height: 270px; border-color: rgba(104, 216, 255, .22); }
+.ring.r3 { width: 170px; height: 170px; border-color: rgba(157, 140, 255, .3); }
+.core {
+  width: 120px;
+  height: 120px;
+  border-radius: 36px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(145deg, #172c4c, #0b1728);
+  border: 1px solid rgba(255, 255, 255, .15);
+  box-shadow: 0 0 80px rgba(104, 216, 255, .2);
+}
+.core span { font-size: 31px; font-weight: 900; }
+.float-card {
+  position: absolute;
+  padding: 14px 16px;
+  border-radius: 18px;
+  background: rgba(13, 27, 47, .78);
+  border: 1px solid rgba(255, 255, 255, .14);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  font-size: 12px;
+  color: #b8c5d7;
+}
+.float-card b { display: block; color: #fff; font-size: 14px; }
+.fc1 { top: 65px; right: 5px; }
+.fc2 { bottom: 75px; left: 0; }
+.fc3 { top: 215px; left: 30px; }
+
+/* Services cards – icon */
+.icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  background: #eef3ff;
+  color: #3159dc;
+  margin-bottom: 26px;
+  font-size: 22px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+}
+.card p { flex-grow: 1; }
+.card a {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--blue);
+}
+.card a:hover { text-decoration: underline; }
+
+/* About / Expertise */
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: center;
+}
+.visual {
+  min-height: 520px;
+  border-radius: 34px;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(145deg, #dfeaff, #eef2ff 55%, #e7fbff);
+  border: 1px solid #dbe5f2;
+}
+.visual::before {
+  content: "";
+  position: absolute;
+  width: 430px;
+  height: 430px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #fff, rgba(130, 157, 255, .25) 45%, transparent 68%);
+  left: -90px;
+  top: -100px;
+}
+.visual::after {
+  content: "";
+  position: absolute;
+  width: 330px;
+  height: 330px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 40%, rgba(104, 216, 255, .55), rgba(157, 140, 255, .12) 55%, transparent 70%);
+  right: -80px;
+  bottom: -90px;
+}
+.dashboard {
+  position: absolute;
+  left: 12%;
+  right: 12%;
+  top: 17%;
+  bottom: 17%;
+  background: rgba(255, 255, 255, .74);
+  border: 1px solid #fff;
+  border-radius: 26px;
+  box-shadow: 0 30px 80px rgba(54, 77, 120, .18);
+  padding: 22px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.dash-top {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: #66758b;
+}
+.dash-grid {
+  display: grid;
+  grid-template-columns: 1.4fr .8fr;
+  gap: 12px;
+  margin-top: 20px;
+}
+.mini {
+  background: #fff;
+  border: 1px solid #e8edf4;
+  border-radius: 16px;
+  padding: 15px;
+}
+.mini.big { min-height: 205px; }
+.mini strong { font-size: 25px; display: block; margin-top: 5px; }
+.bars {
+  height: 125px;
+  display: flex;
+  align-items: end;
+  gap: 9px;
+  margin-top: 20px;
+}
+.bar {
+  flex: 1;
+  border-radius: 7px 7px 2px 2px;
+  background: linear-gradient(to top, #8098ff, #a9e8ff);
+  height: var(--h);
+}
+.stat { display: grid; gap: 11px; }
+.stat div {
+  padding: 13px;
+  background: #f7f9fc;
+  border-radius: 12px;
+}
+.stat small { display: block; color: #8a98ab; }
+.stat b { font-size: 18px; }
+.about-copy p { color: var(--muted); font-size: 16px; }
+.ticks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 30px 0;
+}
+.tick { font-size: 13px; font-weight: 700; }
+.tick::before {
+  content: "✓";
+  display: inline-grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  border-radius: 50%;
+  background: #e8f8f5;
+  color: #159b7e;
+  font-size: 11px;
+}
+
+/* Méthode – principles */
+.principles {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: rgba(255, 255, 255, .1);
+  border: 1px solid rgba(255, 255, 255, .1);
+  border-radius: 28px;
+  overflow: hidden;
+  margin-top: 50px;
+}
+.principle {
+  padding: 28px;
+  background: #0b1728;
+}
+.principle h3 { font-size: 16px; margin: 45px 0 8px; }
+.principle p { font-size: 13px; color: #92a4bb; margin: 0; }
+.number { font-size: 12px; color: #79dfff; font-weight: 800; }
+
+/* Équipe */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+}
+.team-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.team-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow);
+}
+.team-avatar {
+  width: 100%;
+  height: 200px;
+  border-radius: 18px;
+  margin-bottom: 20px;
+  display: grid;
+  place-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.avatar-bg-1 { background: linear-gradient(135deg, #6d8cff, #9d8cff); }
+.avatar-bg-2 { background: linear-gradient(135deg, #68d8ff, #6d8cff); }
+.avatar-bg-3 { background: linear-gradient(135deg, #9d8cff, #ff8ce6); }
+.avatar-bg-4 { background: linear-gradient(135deg, #08111f, #1b2e4b); }
+.avatar-shape {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .25);
+  backdrop-filter: blur(8px);
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  font-size: 24px;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, .4);
+}
+.team-card h3 {
+  font-size: 18px;
+  margin: 0 0 4px;
+}
+.team-role {
+  font-size: 12px;
+  font-weight: 750;
+  color: var(--blue);
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  margin-bottom: 12px;
+}
+.team-bio {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 0 0 20px;
+  flex-grow: 1;
+}
+.team-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.tag {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #f0f4f9;
+  color: #4a586d;
+}
+.team-join {
+  background: linear-gradient(145deg, #0d1b2f, #08111f);
+  color: #fff;
+  border-color: rgba(255,255,255,.1);
+}
+.team-join h3 { color: #fff; }
+.team-join .team-role { color: var(--cyan); }
+.team-join .team-bio { color: #a3b3c7; }
+.team-join .tag { background: rgba(255, 255, 255, .1); color: #c8d5e5; }
+
+.team-manifesto {
+  margin-top: 40px;
+  padding: 30px 40px;
+  background: linear-gradient(90deg, #eef3ff, #e7fbff);
+  border: 1px solid #dbe5f2;
+  border-radius: var(--r);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.team-manifesto p {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink);
+  max-width: 750px;
+}
+
+/* Réalisations */
+.projects {
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap: 16px;
+}
+.project {
+  min-height: 310px;
+  border-radius: 28px;
+  overflow: hidden;
+  position: relative;
+  padding: 28px;
+  color: #fff;
+  background: linear-gradient(145deg, #18355a, #0a1729);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.project:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(8, 17, 31, .25);
+}
+.project:nth-child(2) { background: linear-gradient(145deg, #30285f, #10172e); }
+.project:nth-child(3) { background: linear-gradient(145deg, #0b4652, #091a28); }
+.project.large { grid-row: span 2; min-height: 636px; }
+.project h3 {
+  font-size: 27px;
+  letter-spacing: -.04em;
+  margin: 12px 0 7px;
+  position: relative;
+}
+.project p {
+  max-width: 390px;
+  color: #c5d0df;
+  font-size: 13px;
+  position: relative;
+  margin: 0;
+}
+.project small {
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  color: #9fb1c7;
+  font-weight: 800;
+}
+.project .link-cta {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--cyan);
+  position: relative;
+  z-index: 2;
+}
+.shape-a {
+  position: absolute;
+  width: 300px;
+  height: 210px;
+  right: 9%;
+  bottom: 8%;
+  border: 1px solid rgba(255, 255, 255, .25);
+  border-radius: 30px;
+  transform: rotate(-8deg);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, .25);
+}
+.shape-a::before {
+  content: "";
+  position: absolute;
+  inset: 22px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(104, 216, 255, .5), rgba(157, 140, 255, .15));
+  border: 1px solid rgba(255, 255, 255, .15);
+}
+.shape-b {
+  position: absolute;
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  right: 12%;
+  bottom: 10%;
+  background:
+    radial-gradient(circle at 35% 30%, #fff 0 5%, transparent 7%),
+    radial-gradient(circle, #7fdfff 0 15%, #6c7eff 36%, transparent 67%);
+}
+.shape-c {
+  position: absolute;
+  right: 10%;
+  bottom: 8%;
+  width: 280px;
+  height: 180px;
+  background:
+    repeating-linear-gradient(0deg, transparent 0 19px, rgba(255, 255, 255, .1) 20px),
+    repeating-linear-gradient(90deg, transparent 0 19px, rgba(255, 255, 255, .1) 20px);
+  border-radius: 18px;
+  transform: perspective(500px) rotateX(55deg) rotateZ(-12deg);
+}
+
+/* Contact layout */
+.contact {
+  display: grid;
+  grid-template-columns: .85fr 1.15fr;
+  gap: 70px;
+  align-items: start;
+}
+.contact-copy p { color: var(--muted); max-width: 450px; }
+
+/* Responsive index-specific */
+@media (max-width: 900px) {
+  .hero-inner { grid-template-columns: 1fr; gap: 40px; }
+  .orbital { min-height: 360px; }
+  .team-grid, .principles { grid-template-columns: 1fr; }
+  .about, .contact, .projects { grid-template-columns: 1fr; }
+  .project.large { grid-row: auto; min-height: 310px; }
+  .team-manifesto { flex-direction: column; align-items: flex-start; }
+  .hero-note { flex-direction: column; gap: 16px; }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="nav">
+      <a class="brand" href="index.html" aria-label="Nexora — Accueil">
+        <span class="mark" aria-hidden="true"></span>
+        Nexora
+      </a>
+      <nav class="nav-links" id="navLinks" aria-label="Navigation principale">
+        <a href="#services">Services</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#methode">Méthode</a>
+        <a href="#equipe">Équipe</a>
+        <a href="#realisations">Réalisations</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="nav-cta" href="#contact">Parlons du projet ↗</a>
+      <button class="menu" type="button" id="menuBtn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navLinks">☰</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <!-- Hero -->
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div>
+        <div class="eyebrow">Agence digitale · Lille</div>
+        <h1>Des expériences <span class="gradient">rapides</span>, claires et performantes.</h1>
+        <p class="hero-lead">Nous concevons des sites et produits numériques qui chargent vite, se comprennent facilement et convertissent mieux — sans complexité inutile.</p>
+        <div class="actions">
+          <a class="btn btn-light" href="#services">Découvrir nos services ↗</a>
+          <a class="btn btn-ghost" href="#realisations">Voir nos réalisations</a>
+        </div>
+        <div class="hero-note">
+          <div><strong>Performance</strong>HTML léger · CSS natif</div>
+          <div><strong>Visibilité</strong>SEO · données structurées</div>
+          <div><strong>Clarté</strong>Contenu lisible · sémantique</div>
+        </div>
+      </div>
+      <div class="orbital" aria-hidden="true">
+        <div class="ring"></div>
+        <div class="ring r2"></div>
+        <div class="ring r3"></div>
+        <div class="core"><span>N.</span></div>
+        <div class="float-card fc1"><b>01 · Architecture</b>Une base simple et durable.</div>
+        <div class="float-card fc2"><b>02 · Design</b>Une identité qui respire.</div>
+        <div class="float-card fc3"><b>03 · Data</b>Des contenus faciles à comprendre.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="section" aria-labelledby="services-title">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="kicker">Nos services</div>
+          <h2 id="services-title">Une expertise complète,<br>sans complexité inutile.</h2>
+        </div>
+        <p class="intro">De la stratégie à la mise en ligne, chaque décision sert la clarté, la vitesse, la conversion et la visibilité. Agence digitale basée à Lille, France.</p>
+      </div>
+      <div class="services">
+        <article class="card">
+          <div class="icon" aria-hidden="true">⌁</div>
+          <h3>Sites web & produits</h3>
+          <p>Interfaces responsives, accessibles et rapides, conçues avec une base HTML solide et des Core Web Vitals excellents.</p>
+          <a href="sites-web-produits.html">Découvrir l'offre ↗</a>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true">⌕</div>
+          <h3>SEO & visibilité IA</h3>
+          <p>Architecture, contenu, maillage et données structurées (Schema.org) pour rendre l’information explicite et exploitable par Google et les agents IA.</p>
+          <a href="seo-visibilite-ia.html">Découvrir l'offre ↗</a>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true">✦</div>
+          <h3>Intelligence artificielle</h3>
+          <p>Cas d’usage, automatisations et interfaces pensées pour connecter données, équipes et outils sans dette technique.</p>
+          <a href="intelligence-artificielle.html">Découvrir l'offre ↗</a>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true">◫</div>
+          <h3>Stratégie digitale</h3>
+          <p>Positionnement, parcours utilisateurs et priorités pour transformer une ambition en feuille de route concrète et mesurable.</p>
+          <a href="strategie-digitale.html">Découvrir l'offre ↗</a>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true">⌁</div>
+          <h3>Data & analytics</h3>
+          <p>Des indicateurs utiles et des tableaux de bord lisibles pour mieux décider et suivre la performance réelle.</p>
+          <a href="data-analytics.html">Découvrir l'offre ↗</a>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true">↗</div>
+          <h3>Accompagnement</h3>
+          <p>Un partenaire technique et créatif pour faire évoluer le site ou le produit sans dette inutile ni complexité superflue.</p>
+          <a href="accompagnement.html">Découvrir l'offre ↗</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Expertise -->
+  <section id="expertise" class="section" style="padding-top:20px" aria-labelledby="expertise-title">
+    <div class="wrap about">
+      <div class="visual" role="img" aria-label="Illustration abstraite d'un tableau de bord digital Nexora">
+        <div class="dashboard">
+          <div class="dash-top"><span>NEXORA / OVERVIEW</span><span>LIVE</span></div>
+          <div class="dash-grid">
+            <div class="mini big">
+              <small>Visibilité organique</small>
+              <strong>+42%</strong>
+              <div class="bars" aria-hidden="true">
+                <i class="bar" style="--h:32%"></i>
+                <i class="bar" style="--h:45%"></i>
+                <i class="bar" style="--h:51%"></i>
+                <i class="bar" style="--h:68%"></i>
+                <i class="bar" style="--h:77%"></i>
+                <i class="bar" style="--h:92%"></i>
+              </div>
+            </div>
+            <div class="stat">
+              <div><small>Performance</small><b>98</b></div>
+              <div><small>Pages</small><b>24</b></div>
+              <div><small>Core Web Vitals</small><b>✓</b></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-copy">
+        <div class="kicker">Une architecture qui travaille pour vous</div>
+        <h2 id="expertise-title">Le beau attire.<br>La clarté convainc.</h2>
+        <p>Nous évitons les couches inutiles. Le contenu essentiel est présent dans le HTML, les styles sont locaux, les interactions restent légères et les données importantes sont structurées (JSON-LD, Schema.org).</p>
+        <div class="ticks">
+          <div class="tick">HTML sémantique</div>
+          <div class="tick">CSS natif</div>
+          <div class="tick">Responsive</div>
+          <div class="tick">Schema.org / JSON-LD</div>
+          <div class="tick">Accessibilité WCAG</div>
+          <div class="tick">Aucun framework requis</div>
+        </div>
+        <a class="btn btn-ink" href="expertise.html">En savoir plus sur notre expertise ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Méthode -->
+  <section id="methode" class="section dark" aria-labelledby="methode-title">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="kicker">Notre méthode</div>
+          <h2 id="methode-title">Simple en surface.<br>Précis dessous.</h2>
+        </div>
+        <div>
+          <p class="intro">Une méthode courte pour éviter le bruit : comprendre, structurer, créer, mesurer.</p>
+          <a class="btn btn-ghost" href="methode.html" style="margin-top: 15px;">Découvrir toute notre méthode ↗</a>
+        </div>
+      </div>
+      <div class="principles">
+        <article class="principle">
+          <div class="number">01</div>
+          <h3>Comprendre</h3>
+          <p>Objectifs, audiences, contraintes et intention de recherche.</p>
+        </article>
+        <article class="principle">
+          <div class="number">02</div>
+          <h3>Structurer</h3>
+          <p>Architecture de contenu, pages, entités, données et parcours.</p>
+        </article>
+        <article class="principle">
+          <div class="number">03</div>
+          <h3>Créer</h3>
+          <p>Design visuel, HTML, CSS et interactions avec le minimum nécessaire.</p>
+        </article>
+        <article class="principle">
+          <div class="number">04</div>
+          <h3>Mesurer</h3>
+          <p>Performance, visibilité, conversion et qualité du contenu.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Équipe -->
+  <section id="equipe" class="section" aria-labelledby="team-title">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="kicker">Le collectif</div>
+          <h2 id="team-title">Des esprits affûtés,<br>une synergie directe.</h2>
+        </div>
+        <p class="intro">Pas d'intermédiaires, pas de jargon. Vous échangez en direct avec les spécialistes qui conçoivent, codent et optimisent vos produits numériques.</p>
+      </div>
+
+      <div class="team-grid">
+        <article class="team-card">
+          <div class="team-avatar avatar-bg-1" aria-hidden="true">
+            <div class="avatar-shape">EL</div>
+          </div>
+          <h3>Éléonore Laurent</h3>
+          <div class="team-role">Lead Strategy & Product</div>
+          <p class="team-bio">« Maximiser la valeur de chaque pixel et simplifier le complexe pour créer de l'impact direct. »</p>
+          <div class="team-tags">
+            <span class="tag">UX Strategy</span>
+            <span class="tag">Product Design</span>
+            <span class="tag">AI Workflows</span>
+          </div>
+        </article>
+
+        <article class="team-card">
+          <div class="team-avatar avatar-bg-2" aria-hidden="true">
+            <div class="avatar-shape">AM</div>
+          </div>
+          <h3>Antoine Moreau</h3>
+          <div class="team-role">Architecte Front & Performance</div>
+          <p class="team-bio">« Un site rapide est un site respectueux. Zéro code inutile, 100% de performance mesurable. »</p>
+          <div class="team-tags">
+            <span class="tag">HTML/CSS Natif</span>
+            <span class="tag">Core Web Vitals</span>
+            <span class="tag">Accessibilité</span>
+          </div>
+        </article>
+
+        <article class="team-card">
+          <div class="team-avatar avatar-bg-3" aria-hidden="true">
+            <div class="avatar-shape">SD</div>
+          </div>
+          <h3>Sophie Dubois</h3>
+          <div class="team-role">Head of Data & SEO / IA</div>
+          <p class="team-bio">« Rendre votre marque incontournable auprès des moteurs traditionnels et des nouveaux moteurs IA. »</p>
+          <div class="team-tags">
+            <span class="tag">GEO / Generative Engine</span>
+            <span class="tag">Schema.org</span>
+            <span class="tag">Analytics</span>
+          </div>
+        </article>
+
+        <article class="team-card team-join">
+          <div class="team-avatar avatar-bg-4" aria-hidden="true">
+            <div class="avatar-shape" style="background: rgba(255,255,255,.1); border-color: rgba(255,255,255,.2)">+</div>
+          </div>
+          <h3>Rejoignez l'équipe</h3>
+          <div class="team-role">Talent Spontané</div>
+          <p class="team-bio">Vous partagez notre obsession pour la sobriété numérique, le beau et la vitesse ? Écrivez-nous.</p>
+          <div class="team-tags">
+            <span class="tag">Design</span>
+            <span class="tag">Dev</span>
+            <span class="tag">SEO / Data</span>
+          </div>
+        </article>
+      </div>
+
+      <div class="team-manifesto">
+        <p>💡 <strong>Notre culture :</strong> Nous travaillons en équipe restreinte et agile. Cela garantit une réactivité maximale et une maîtrise totale de la qualité de vos projets.</p>
+        <a class="btn btn-ink" style="flex-shrink: 0;" href="#contact">Rejoindre l'aventure ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Réalisations -->
+  <section id="realisations" class="section" aria-labelledby="realisations-title">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="kicker">Réalisations</div>
+          <h2 id="realisations-title">Des interfaces qui<br>ont quelque chose à dire.</h2>
+        </div>
+        <p class="intro">Découvrez nos projets récents et les études de cas détaillant nos résultats.</p>
+      </div>
+      <div class="projects">
+        <a href="etude-de-cas.html" class="project large" aria-label="Consulter l'étude de cas Northline">
+          <div>
+            <small>01 · Étude de cas client</small>
+            <h3>Northline</h3>
+            <p>Une plateforme B2B claire, construite autour d’un système de contenu structuré et de parcours courts. +140% de conversion.</p>
+          </div>
+          <span class="link-cta">Lire l'étude de cas détaillée ↗</span>
+          <div class="shape-a" aria-hidden="true"></div>
+        </a>
+        <a href="produit.html" class="project" aria-label="Consulter le projet PulseAnalytics">
+          <div>
+            <small>02 · Produit</small>
+            <h3>PulseAnalytics</h3>
+            <p>Plateforme SaaS d’analyse temps réel, &lt; 45 ms de latence et 18 Ko de JS client.</p>
+          </div>
+          <span class="link-cta">Découvrir le projet ↗</span>
+          <div class="shape-b" aria-hidden="true"></div>
+        </a>
+        <a href="data-engine-ai.html" class="project" aria-label="Consulter le projet DataEngine AI">
+          <div>
+            <small>03 · Data</small>
+            <h3>DataEngine AI</h3>
+            <p>Pipeline d’ingestion et de structuration sémantique pour l’indexation IA.</p>
+          </div>
+          <span class="link-cta">Découvrir le projet ↗</span>
+          <div class="shape-c" aria-hidden="true"></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section" style="padding-top:40px" aria-labelledby="contact-title">
+    <div class="wrap contact">
+      <div class="contact-copy">
+        <div class="kicker">Parlons du projet</div>
+        <h2 id="contact-title">Une idée mérite<br>une belle interface.</h2>
+        <p>Discutons de votre projet et de vos objectifs. Le formulaire ci-contre vous permettra de nous détailler votre besoin.</p>
+        <p>
+          <strong>bonjour@nexora.fr</strong><br>
+          Lille · France
+        </p>
+      </div>
+      <div class="contact-card">
+        <form id="contactForm" action="#" method="post" novalidate>
+          <!-- Honeypot anti-spam -->
+          <div class="hp" aria-hidden="true">
+            <label for="website">Ne pas remplir</label>
+            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+          </div>
+          <label for="name">Nom</label>
+          <input id="name" name="name" autocomplete="name" required placeholder="Votre nom" maxlength="120">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required placeholder="vous@entreprise.fr" maxlength="180">
+          <label for="message">Projet</label>
+          <textarea id="message" name="message" required placeholder="Parlez-nous de votre projet…" maxlength="4000"></textarea>
+          <button class="submit" type="submit" id="submitBtn">Envoyer le message ↗</button>
+        </form>
+        <p id="formStatus" role="status" aria-live="polite" style="font-size:12px;color:#64748b;margin:14px 0 0"></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div>
+      <strong style="color:#fff">Nexora</strong> · Stratégie, design & technologie · Lille, France
+    </div>
+    <div class="footer-links">
+      <a href="#services">Services</a>
+      <a href="#expertise">Expertise</a>
+      <a href="#methode">Méthode</a>
+      <a href="#equipe">Équipe</a>
+      <a href="#realisations">Réalisations</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/site.js" defer></script>
+</body>
+</html>
