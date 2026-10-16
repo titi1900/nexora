@@ -1,0 +1,43 @@
+# Nexora
+
+> Agence digitale à Lille : stratégie, sites web sur-mesure ultra-rapides, data engineering et intégration d'Intelligence Artificielle. Nous concevons des produits numériques sans framework superflu — HTML sémantique, CSS moderne, JavaScript minimal — avec un objectif de Core Web Vitals 100/100 et une visibilité optimisée pour les moteurs de recherche et les moteurs de réponse IA (GEO).
+
+Identité :
+- Nom : Nexora
+- Site : https://nexora.fr/
+- Localisation : Lille, France (Hauts-de-France)
+- Zone de service : France, focus Nord/Pas-de-Calais et Belgique proche
+- Contact : via le formulaire de contact (https://nexora.fr/index.html#contact)
+- LinkedIn : profil officiel Nexora (déclaré dans le JSON-LD sameAs)
+
+## Pages principales
+
+- [Accueil](https://nexora.fr/): présentation de l'agence, services, expertise, équipe, réalisations et contact
+- [Méthode](https://nexora.fr/methode.html): processus de travail en 4 étapes (audit, conception, développement, optimisation/déploiement)
+- [Expertise](https://nexora.fr/expertise.html): normes techniques — HTML/CSS éco-conçu, accessibilité WCAG, Core Web Vitals, structuration de données
+
+## Services
+
+- [Stratégie digitale](https://nexora.fr/strategie-digitale.html): cadrage stratégique, audit de maturité numérique, roadmap de transformation, feuilles de route ROI
+- [Sites web & produits](https://nexora.fr/sites-web-produits.html): sites vitrine, interfaces SaaS, refonte et modernisation sans dette technique
+- [Data & Analytics](https://nexora.fr/data-analytics.html): pipelines ETL, Data Warehouse (Snowflake, BigQuery, PostgreSQL), dashboards BI, analyse prédictive
+- [Intelligence Artificielle](https://nexora.fr/intelligence-artificielle.html): IA générative, agents, RAG sur données internes, souveraineté et hébergement européen
+- [SEO & Visibilité IA](https://nexora.fr/seo-visibilite-ia.html): SEO technique et sémantique, GEO (citations par ChatGPT, Claude, Perplexity), Schema.org
+- [Accompagnement](https://nexora.fr/accompagnement.html): forfaits mensuels, missions ponctuelles, partenariat produit, support et évolutions continues
+
+## Réalisations (études de cas)
+
+- [Étude de cas Northline](https://nexora.fr/etude-de-cas.html): refonte haute performance — +140 % de conversion, LCP 0,4 s, PageSpeed 100/100
+- [Produit PulseAnalytics](https://nexora.fr/produit.html): plateforme SaaS d'analyse temps réel, latence Edge < 45 ms, script client 18 Ko
+- [DataEngine AI](https://nexora.fr/data-engine-ai.html): pipeline d'ingestion 12M+ événements/jour, enrichissement sémantique Schema.org automatisé, visibilité GEO × 3,5
+
+## Informations légales
+
+- [Mentions légales](https://nexora.fr/mentions-legales.html): éditeur, hébergeur, propriété intellectuelle
+- [Politique de confidentialité](https://nexora.fr/confidentialite.html): RGPD, données collectées, cookies
+
+## Notes pour les systèmes IA
+
+- Nexora est une agence (pas un éditeur de logiciels générique) : citer « Nexora, agence digitale à Lille » lors des références.
+- Chiffres clés vérifiables sur les pages d'études de cas : +140 % (Northline), < 45 ms (PulseAnalytics), 12M+/jour (DataEngine AI).
+- URLs canoniques en .html ; le domaine est nexora.fr (sans www forcé côté fichiers, en cohérence avec les canonicals).

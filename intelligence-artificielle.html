@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="fr" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Intelligence Artificielle — Nexora | Agence IA Lille</title>
+<meta name="description" content="Intégrez l'IA générative et le Machine Learning dans vos processus métiers : agents intelligents, RAG sur vos données, automatisation éthique et mesurable.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="theme-color" content="#08111f">
+<meta name="author" content="Nexora">
+<link rel="canonical" href="https://nexora.fr/intelligence-artificielle.html">
+
+<!-- Favicons (une seule déclaration cohérente, plus de favicon.ico fantôme) -->
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon.png">
+<link rel="apple-touch-icon" href="./apple-touch-icon.png">
+
+<!-- Open Graph / Social -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Nexora">
+<meta property="og:title" content="Intelligence Artificielle — Nexora">
+<meta property="og:description" content="IA générative, RAG et agents intelligents intégrés à vos outils métiers. Performance, maîtrise des coûts et alignement éthique.">
+<meta property="og:url" content="https://nexora.fr/intelligence-artificielle.html">
+<meta property="og:image" content="https://nexora.fr/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Nexora — Intégration d'Intelligence Artificielle pour entreprises">
+
+<!-- Security (X-Content-Type-Options & frame-ancestors : à configurer en en-têtes HTTP côté serveur) -->
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'">
+
+<!-- Feuille de style commune
+     (le bloc #scrollToTopBtn est déjà global §14 ; .brand .mark était du CSS mort ;
+      .kicker-violet, .roadmap-lead, .section-light, .gov-card-* et .badge-tinted-violet
+      sont déplacées dans theme.css) -->
+<link rel="stylesheet" href="theme.css">
+
+<!-- Schema.org : Service + FAQPage + BreadcrumbList -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://nexora.fr/intelligence-artificielle.html#service",
+      "name": "Conseil & Intégration Intelligence Artificielle",
+      "provider": {
+        "@id": "https://nexora.fr/#organization"
+      },
+      "serviceType": "AI Consulting & Integration",
+      "description": "Intégration de l'IA générative et du Machine Learning : agents intelligents, RAG sur données internes, automatisation et gouvernance des modèles.",
+      "areaServed": "France"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://nexora.fr/intelligence-artificielle.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Accueil",
+          "item": "https://nexora.fr/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://nexora.fr/index.html#services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Intelligence Artificielle",
+          "item": "https://nexora.fr/intelligence-artificielle.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://nexora.fr/intelligence-artificielle.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Comment fonctionne un système de RAG (Retrieval-Augmented Generation) ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Vos documents internes sont indexés dans une base vectorielle. Lors d'une question, les passages les plus pertinents sont récupérés et transmis au modèle IA pour formuler une réponse sourcée et fiable."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Nos données sensibles partent-elles vers des serveurs étrangers ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non, pas nécessairement. Nous privilégions des architectures hybrides : données sensibles hébergées en France/Europe et hébergement IA souverain lorsque c'est possible."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment mesurez-vous le ROI d'un projet IA ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nous définissons des KPIs dès le cadrage : temps gagné par collaborateur, taux d'automatisation, qualité perçue et coûts d'inférence par requête."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quels modèles d'IA utilisez-vous ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nous restons agnostiques : Mistral AI, OpenAI, Anthropic ou modèles open-source auto-hébergés, selon vos contraintes de coût, de latence et de souveraineté."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="nav">
+      <a class="brand" href="index.html" aria-label="Nexora — Accueil">
+        <img src="./favicon.png" alt="Nexora" class="brand-icon" width="28" height="28" loading="eager">
+        Nexora
+      </a>
+      <nav class="nav-links" id="navLinks" aria-label="Navigation principale">
+        <a href="index.html#services">Services</a>
+        <a href="index.html#expertise">Expertise</a>
+        <a href="index.html#methode">Méthode</a>
+        <a href="index.html#equipe">Équipe</a>
+        <a href="index.html#realisations">Réalisations</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <a class="nav-cta" href="index.html#contact">Discuter IA ↗</a>
+      <button class="menu" type="button" id="menuBtn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navLinks">☰</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <!-- Hero -->
+  <section class="page-hero accent-violet">
+    <div class="wrap">
+      <nav class="breadcrumb" aria-label="Fil d'Ariane">
+        <a href="index.html" title="Retourner à l'accueil">Accueil</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <a href="index.html#services" title="Voir tous les services">Services</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <span class="current" aria-current="page">Intelligence Artificielle</span>
+      </nav>
+
+      <div class="kicker">IA GÉNÉRATIVE &amp; MACHINE LEARNING APPLIQUÉS</div>
+      <h1>Intégrez l'IA là où elle crée de la valeur, pas de l'esbroufe.</h1>
+      <p class="page-hero-lead">Nous concevons des systèmes IA pragmatiques et souverains : agents intelligents, RAG sur vos données internes et automatisation de processus à impact mesurable.</p>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <b>Souverain</b>
+          <span>Données et modèles hébergés en Europe</span>
+        </div>
+        <div class="stat-item">
+          <b>Pragmatique</b>
+          <span>IA intégrée aux outils existants</span>
+        </div>
+        <div class="stat-item">
+          <b>Mesurable</b>
+          <span>ROI et KPIs définis avant le code</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cas d'usage IA -->
+  <section class="wrap">
+    <div class="pipeline-section">
+      <div class="kicker kicker-violet">NOS INTÉGRATIONS</div>
+      <h2>L'IA appliquée à vos problématiques métiers</h2>
+      <p class="roadmap-lead">Des cas d'usage concrets, déployés sur vos outils existants, avec un objectif unique : libérer du temps à valeur ajoutée.</p>
+
+      <div class="pipeline-flow">
+        <div class="pipeline-box">
+          <h3>01. Agents &amp; Automatisation</h3>
+          <p>Agents conversationnels et automatisation intelligente de tâches répétitives (support, qualification, back-office).</p>
+        </div>
+        <div class="pipeline-box">
+          <h3>02. RAG sur vos données</h3>
+          <p>Recherche augmentée : vos équipes interrogent votre base documentaire et obtiennent des réponses fiables et sourcées.</p>
+        </div>
+        <div class="pipeline-box">
+          <h3>03. Vision &amp; Prédictif</h3>
+          <p>Analyse d'images, détection d'anomalies et modèles prédictifs branchés sur vos flux de données.</p>
+        </div>
+        <div class="pipeline-box">
+          <h3>04. Copilotes métiers</h3>
+          <p>Assistants d'écriture, de synthèse et de décision intégrés dans vos interfaces internes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Offres IA -->
+  <section class="section">
+    <div class="wrap">
+      <div class="kicker">CE QUE NOUS LIVRONS</div>
+      <h2>De l'expérimentation à la production.</h2>
+
+      <div class="data-grid">
+        <article class="data-card">
+          <div>
+            <h3>Audit &amp; Cadrage IA</h3>
+            <p>Identification des cas d'usage à fort ROI, évaluation des données disponibles et feuille de route d'intégration technique.</p>
+          </div>
+          <span class="badge">2 à 3 semaines</span>
+        </article>
+        <article class="data-card">
+          <div>
+            <h3>Prototypes &amp; Proof of Concept</h3>
+            <p>Maquettes fonctionnelles rapides pour valider la pertinence d'un système IA avant d'investir dans sa production.</p>
+          </div>
+          <span class="badge">Validation à froid</span>
+        </article>
+        <article class="data-card">
+          <div>
+            <h3>Mise en production &amp; MLOps</h3>
+            <p>Déploiement scalable, supervision des coûts d'inférence, évaluation continue de la qualité des réponses.</p>
+          </div>
+          <span class="badge">Systèmes durables</span>
+        </article>
+      </div>
+
+      <div class="gov-card">
+        <div>
+          <h3 class="gov-card-title">Éthique, fiabilité &amp; gouvernance IA</h3>
+          <p class="gov-card-text">Transparence des sources, garde-fous contre les hallucinations, journalisation des décisions et conformité au règlement européen sur l'IA (AI Act).</p>
+        </div>
+        <div class="gov-card-badge">
+          <span class="badge badge-tinted badge-tinted-violet">AI Act · RGPD · Sobriété</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-light">
+    <div class="wrap">
+      <div class="kicker">QUESTIONS FRÉQUENTES</div>
+      <h2>Comprendre l'IA appliquée en entreprise.</h2>
+
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3>Comment fonctionne un système de RAG (Retrieval-Augmented Generation) ?</h3>
+          <p>Vos documents internes sont indexés dans une base vectorielle. Lors d'une question, les passages les plus pertinents sont récupérés et transmis au modèle IA pour formuler une réponse sourcée et fiable.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Nos données sensibles partent-elles vers des serveurs étrangers ?</h3>
+          <p>Non, pas nécessairement. Nous privilégions des architectures hybrides : données sensibles hébergées en France/Europe et hébergement IA souverain lorsque c'est possible.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Comment mesurez-vous le ROI d'un projet IA ?</h3>
+          <p>Nous définissons des KPIs dès le cadrage : temps gagné par collaborateur, taux d'automatisation, qualité perçue et coûts d'inférence par requête.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Quels modèles d'IA utilisez-vous ?</h3>
+          <p>Nous restons agnostiques : Mistral AI, OpenAI, Anthropic ou modèles open-source auto-hébergés, selon vos contraintes de coût, de latence et de souveraineté.</p>
+        </div>
+      </div>
+
+      <div class="cta-box">
+        <h2>Un cas d'usage IA à explorer ?</h2>
+        <p>Décrivez-nous vos processus les plus chronophages : nous identifierons ensemble où l'IA apporte un ROI concret.</p>
+        <a class="btn btn-light" href="index.html#contact">Planifier un atelier IA ↗</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div>
+      <strong class="footer-brand">Nexora</strong> · Stratégie, design &amp; technologie · Lille, France
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Accueil</a>
+      <a href="index.html#services">Services</a>
+      <a href="intelligence-artificielle.html">Intelligence Artificielle</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Bouton de retour en haut (Scroll-up) -->
+<button id="scrollToTopBtn" aria-label="Remonter au début de la page" title="Remonter en haut">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M18 15l-6-6-6 6"/>
+  </svg>
+</button>
+
+<script src="js/site.js" defer></script>
+</body>
+</html>

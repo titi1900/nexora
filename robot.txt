@@ -1,0 +1,31 @@
+# robots.txt — Nexora (nexora.fr)
+# Convention : URLs réelles en .html, sitemap à la racine.
+
+User-agent: *
+Allow: /
+
+# Moteurs de réponse IA (GEO) : crawl autorisé, explicitement
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Ressources techniques inutiles au crawl
+Disallow: /js/
+Disallow: /404.html
+
+# Sitemap
+Sitemap: https://nexora.fr/sitemap.xml
