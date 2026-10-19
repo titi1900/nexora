@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="fr" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DataEngine AI — Pipeline Data &amp; Ingestion IA | Nexora Lille</title>
+<meta name="description" content="Découvrez DataEngine AI, la solution de structuration et de traitement de données à haut débit développée par Nexora pour optimiser la recherche décisionnelle et le SEO/GEO.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="theme-color" content="#08111f">
+<meta name="author" content="Nexora">
+<!-- MODE LOCAL (file:// ou http://localhost) — domaine nexora.fr non encore acquis.
+     Les balises ci-dessous (canonical, hreflang) exigent des URLs absolues :
+     elles sont désactivées ici et seront réactivées telles quelles en production,
+     avec https://nexora.fr comme origine.
+<link rel="canonical" href="https://nexora.fr/data-engine-ai.html">
+<link rel="alternate" hreflang="fr" href="https://nexora.fr/data-engine-ai.html">
+<link rel="alternate" hreflang="en" href="https://nexora.fr/en/data-engine-ai.html">
+<link rel="alternate" hreflang="de" href="https://nexora.fr/de/data-engine-ai.html">
+<link rel="alternate" hreflang="x-default" href="https://nexora.fr/data-engine-ai.html">
+-->
+
+<!-- Favicons (une seule déclaration cohérente, plus de favicon.ico fantôme) -->
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon.png">
+<link rel="apple-touch-icon" href="./apple-touch-icon.png">
+
+<!-- Open Graph / Social (URLs relatives en mode local,
+     à repasser en absolues https://nexora.fr/… en production) -->
+<meta property="og:type" content="article">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Nexora">
+<meta property="og:title" content="DataEngine AI — Architecture Data &amp; IA par Nexora">
+<meta property="og:description" content="Traitement de 10M+ de données quotidiennes, structuration Schema.org automatisée et souveraineté totale.">
+<meta property="og:url" content="./data-engine-ai.html">
+<meta property="og:image" content="./og-data-engine.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Nexora — DataEngine AI, pipeline data et IA générative">
+
+<!-- Security (X-Content-Type-Options & frame-ancestors : à configurer en en-têtes HTTP côté serveur) -->
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'">
+
+<!-- Feuille de style commune
+     (le bloc #scrollToTopBtn est déjà global §14 ;
+      .brand .mark était du CSS mort) -->
+<link rel="stylesheet" href="theme.css">
+
+<!-- Schema.org : Article + BreadcrumbList + Dataset
+     ⚠️ MODE LOCAL : le JSON-LD est désactivé (les @id Schema.org exigent
+     des URLs absolues stables). À réactiver tel quel en production une
+     fois le domaine nexora.fr acquis.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://nexora.fr/data-engine-ai.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Accueil",
+          "item": "https://nexora.fr/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Réalisations",
+          "item": "https://nexora.fr/index.html#realisations"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Projet DataEngine AI",
+          "item": "https://nexora.fr/data-engine-ai.html"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://nexora.fr/data-engine-ai.html#article",
+      "headline": "DataEngine AI : structuration et valorisation sémantique des données",
+      "description": "Pipeline d'ingestion haute performance transformant des données brutes en graphes de connaissances exploitables par les LLM et les moteurs de recherche nouvelle génération.",
+      "author": { "@id": "https://nexora.fr/#organization" },
+      "publisher": { "@id": "https://nexora.fr/#organization" },
+      "inLanguage": "fr-FR",
+      "datePublished": "2026-08-20",
+      "dateModified": "2026-10-16",
+      "mainEntityOfPage": { "@id": "https://nexora.fr/data-engine-ai.html" }
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://nexora.fr/data-engine-ai.html#dataset",
+      "name": "DataEngine AI Architecture",
+      "description": "Pipeline d'ingestion de données hétérogènes et de normalisation sémantique pour l'indexation IA.",
+      "creator": { "@id": "https://nexora.fr/#organization" }
+    }
+  ]
+}
+</script>
+-->
+</head>
+<body>
+
+<a class="skip" href="#main">Aller au contenu</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="nav">
+      <a class="brand" href="index.html" aria-label="Nexora — Retour accueil">
+        <img src="./favicon.png" alt="Nexora" class="brand-icon" width="28" height="28" loading="eager">
+        Nexora
+      </a>
+      <nav class="nav-links" id="navLinks" aria-label="Navigation principale">
+        <a href="index.html#services">Services</a>
+        <a href="index.html#expertise">Expertise</a>
+        <a href="index.html#methode">Méthode</a>
+        <a href="index.html#equipe">Équipe</a>
+        <a href="index.html#realisations">Réalisations</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="nav-cta" href="index.html#contact">Auditer votre Data ↗</a>
+
+        <!-- Sélecteur de langue : zéro JS (details/summary).
+             MODE LOCAL : liens relatifs vers la page correspondante dans
+             chaque langue ; en production, repasser en URLs absolues
+             https://nexora.fr/… avec hreflang croisés. -->
+        <details class="lang-switch">
+          <summary aria-label="Choisir la langue">FR ▾</summary>
+          <ul class="lang-menu">
+            <li><a href="data-engine-ai.html" lang="fr" aria-current="true">Français</a></li>
+            <li><a href="en/data-engine-ai.html" lang="en">English</a></li>
+            <li><a href="de/data-engine-ai.html" lang="de">Deutsch</a></li>
+          </ul>
+        </details>
+
+        <button class="menu" type="button" id="menuBtn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navLinks">☰</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <!-- Hero -->
+  <section class="page-hero accent-violet">
+    <div class="wrap">
+      <nav class="breadcrumb" aria-label="Fil d'Ariane">
+        <a href="index.html" title="Retourner à la page d'accueil">Accueil</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <a href="index.html#realisations" title="Voir toutes nos réalisations">Réalisations</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <span class="current" aria-current="page">DataEngine AI</span>
+      </nav>
+
+      <div class="kicker">Ingénierie de Données &amp; IA Générative</div>
+      <h1>DataEngine AI : Structuration &amp; Valorisation sémantique des données</h1>
+      <p class="page-hero-lead">Création d’un pipeline d’ingestion haute performance transformant des données brutes en graphes de connaissances exploitables par les LLM et les moteurs de recherche nouvelle génération.</p>
+
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <span class="val">12M+</span>
+          <span class="lbl">Événements traités par jour</span>
+        </div>
+        <div class="metric-card">
+          <span class="val">99,8 %</span>
+          <span class="lbl">Précision de catégorisation IA</span>
+        </div>
+        <div class="metric-card">
+          <span class="val">× 3,5</span>
+          <span class="lbl">Visibilité dans les moteurs GEO</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contenu + Sidebar -->
+  <div class="wrap content-layout">
+    <article class="main-content">
+      <h2>1. L’enjeu métier</h2>
+      <p>Face à l’émergence des agents IA et de la recherche générative (GEO), disposer de données non structurées devient un frein majeur à la visibilité et à la prise de décision. Le projet DataEngine AI avait pour mission de nettoyer, classifier et exposer les flux de données critiques d’un groupe industriel en temps réel.</p>
+      <p>L’objectif : convertir des bases de données hétérogènes en un graphe de connaissances sémantique d’une précision absolue.</p>
+
+      <h2>2. Déploiement &amp; briques techniques</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3>Ingestion ETL Stream</h3>
+          <p>Collecte en continu via des pipelines légers traitant les données sans surcharge serveur.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Enrichissement Sémantique</h3>
+          <p>Balisage automatique via des micro-modèles NLP pour un typage JSON-LD / Schema.org instantané.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Vector Store Souverain</h3>
+          <p>Stockage vectoriel hébergé en France pour garantir la confidentialité et la conformité RGPD.</p>
+        </div>
+        <div class="feature-card">
+          <h3>API RAG Haute Capacité</h3>
+          <p>Exposition de points d’accès sécurisés permettant aux applications internes de requêter l’IA en &lt; 100 ms.</p>
+        </div>
+      </div>
+
+      <h2>3. Résultats &amp; performance durable</h2>
+      <p>Grâce au pipeline DataEngine AI, l’entreprise cliente a automatisé 85 % de ses tâches de reporting interne et a vu la présence de ses produits multipliée par 3,5 dans les réponses générées par les modèles d’IA grand public (ChatGPT, Perplexity, Gemini).</p>
+    </article>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="side-card">
+        <h3>Spécifications</h3>
+        <ul class="meta-list">
+          <li><span class="lbl">Domaine</span> <span class="val">Data Engineering / IA</span></li>
+          <li><span class="lbl">Rôle Nexora</span> <span class="val">Architecture &amp; Pipelines</span></li>
+          <li><span class="lbl">Technologies</span> <span class="val">Python Native, Vector DB</span></li>
+          <li><span class="lbl">Hébergement</span> <span class="val">Souverain (France)</span></li>
+        </ul>
+        <a class="btn-full" href="index.html#contact">Déployer un projet Data ↗</a>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div>
+      <strong class="footer-brand">Nexora</strong> · Stratégie, design &amp; technologie · Lille, France
+    </div>
+    <div class="footer-links">
+      <a href="index.html#services">Services</a>
+      <a href="index.html#expertise">Expertise</a>
+      <a href="index.html#methode">Méthode</a>
+      <a href="index.html#equipe">Équipe</a>
+      <a href="index.html#realisations">Réalisations</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Bouton de retour en haut (Scroll-up) -->
+<button id="scrollToTopBtn" aria-label="Remonter au début de la page" title="Remonter en haut">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M18 15l-6-6-6 6"/>
+  </svg>
+</button>
+
+<script src="js/site.js" defer></script>
+</body>
+</html>

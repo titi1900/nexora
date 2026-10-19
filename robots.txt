@@ -1,0 +1,96 @@
+# robots.txt — Nexora (nexora.fr)
+# Convention : URLs réelles en .html, sitemap à la racine, versions /en/ et /de/.
+# Toutes les pages sont publiques : aucune restriction de crawl autre que les
+# fichiers techniques sans valeur pour les moteurs.
+
+# ── Règle globale ──────────────────────────────────────────────
+User-agent: *
+Allow: /
+Disallow: /js/
+Disallow: /404.html
+
+# ── Moteurs de recherche ───────────────────────────────────────
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# ── Robots des assistants et moteurs de réponse IA (GEO) ──────
+# Crawl autorisé explicitement : contenu Nexora citable par les LLMs.
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot-News
+Allow: /
+
+# ── Autres robots et outils d'IA ──────────────────────────────
+User-agent: CCBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+# ── Outils de monitoring SEO ──────────────────────────────────
+User-agent: AhrefsBot
+Allow: /
+
+User-agent: SemrushBot
+Allow: /
+
+User-agent: Screaming Frog SEO Spider
+Allow: /
+
+User-agent: BingPreview
+Allow: /
+
+# ── Sitemap ───────────────────────────────────────────────────
+Sitemap: https://nexora.fr/sitemap.xml
+Sitemap: https://nexora.fr/sitemap-en.xml
+Sitemap: https://nexora.fr/sitemap-de.xml
