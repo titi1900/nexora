@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Case Study: Northline Rebuild &amp; Performance — Nexora Lille</title>
+<meta name="description" content="How Nexora optimized Northline's speed, accessibility and conversion rate with a custom, framework-free web architecture.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="theme-color" content="#08111f">
+<meta name="author" content="Nexora">
+<!-- LOCAL MODE (file:// or http://localhost) — the nexora.fr domain is not acquired yet.
+     The tags below (canonical, hreflang) require absolute URLs: they are
+     disabled here and will be re-enabled as-is in production, with
+     https://nexora.fr as the origin.
+<link rel="canonical" href="https://nexora.fr/en/etude-de-cas.html">
+<link rel="alternate" hreflang="fr" href="https://nexora.fr/etude-de-cas.html">
+<link rel="alternate" hreflang="en" href="https://nexora.fr/en/etude-de-cas.html">
+<link rel="alternate" hreflang="de" href="https://nexora.fr/de/etude-de-cas.html">
+<link rel="alternate" hreflang="x-default" href="https://nexora.fr/etude-de-cas.html">
+-->
+
+<!-- Assets point to the site root (theme.css, favicons live at the root) -->
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+
+<!-- Open Graph / Social (relative URLs in local mode,
+     switch back to absolute https://nexora.fr/… in production) -->
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Nexora">
+<meta property="og:title" content="Case Study: Northline Rebuild &amp; Performance — Nexora">
+<meta property="og:description" content="+140% conversion and a 100/100 Core Web Vitals score. Full analysis of the solution.">
+<meta property="og:url" content="../etude-de-cas.html">
+<meta property="og:image" content="../og-case-study.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Nexora — Northline case study: high-performance rebuild">
+
+<!-- Security (X-Content-Type-Options & frame-ancestors: configure as HTTP headers on the server) -->
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'">
+
+<!-- Shared stylesheet -->
+<link rel="stylesheet" href="../theme.css">
+
+<!-- Schema.org: Article + BreadcrumbList
+     ⚠️ LOCAL MODE: JSON-LD is disabled (Schema.org @id values require
+     stable absolute URLs). Re-enable as-is in production once the
+     nexora.fr domain is acquired.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://nexora.fr/en/etude-de-cas.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://nexora.fr/en/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Work",
+          "item": "https://nexora.fr/en/index.html#realisations"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Northline client case",
+          "item": "https://nexora.fr/en/etude-de-cas.html"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://nexora.fr/en/etude-de-cas.html#article",
+      "headline": "Ultra-fast Rebuild and SEO/GEO Optimization for Northline",
+      "description": "A detailed case study on the technical modernization and performance acceleration of the Northline platform.",
+      "author": { "@id": "https://nexora.fr/#organization" },
+      "publisher": { "@id": "https://nexora.fr/#organization" },
+      "inLanguage": "en",
+      "datePublished": "2026-09-15",
+      "dateModified": "2026-10-16",
+      "about": {
+        "@type": "Organization",
+        "name": "Northline"
+      },
+      "mainEntityOfPage": { "@id": "https://nexora.fr/en/etude-de-cas.html" }
+    }
+  ]
+}
+</script>
+-->
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="nav">
+      <a class="brand" href="index.html" aria-label="Nexora — Home">
+        <img src="../favicon.png" alt="Nexora" class="brand-icon" width="28" height="28" loading="eager">
+        Nexora
+      </a>
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="index.html#services">Services</a>
+        <a href="index.html#expertise">Expertise</a>
+        <a href="index.html#methode">Method</a>
+        <a href="index.html#equipe">Team</a>
+        <a href="index.html#realisations">Work</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="nav-cta" href="index.html#contact">Have a similar project? ↗</a>
+
+        <!-- Language switch: zero JS (details/summary).
+             LOCAL MODE: relative links to the matching page in each language;
+             in production, switch back to absolute https://nexora.fr/…
+             URLs with cross-linked hreflang. -->
+        <details class="lang-switch">
+          <summary aria-label="Choose language">EN ▾</summary>
+          <ul class="lang-menu">
+            <li><a href="../etude-de-cas.html" lang="fr">Français</a></li>
+            <li><a href="etude-de-cas.html" lang="en" aria-current="true">English</a></li>
+            <li><a href="../de/etude-de-cas.html" lang="de">Deutsch</a></li>
+          </ul>
+        </details>
+
+        <button class="menu" type="button" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">☰</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <!-- Hero -->
+  <section class="page-hero accent-emerald">
+    <div class="wrap">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html" title="Back to the home page">Home</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <a href="index.html#realisations" title="See all our work">Work</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <span class="current" aria-current="page">Northline</span>
+      </nav>
+
+      <div class="kicker">Case study · E-Commerce &amp; SaaS</div>
+      <h1>High-Performance Rebuild for Northline</h1>
+      <p class="page-hero-lead">How we eliminated technical debt, cut load time by 4 and increased the conversion rate by 140% in 90 days.</p>
+
+      <div class="kpi-banner">
+        <div class="kpi-card">
+          <span class="val">+140%</span>
+          <span class="lbl">Overall conversion rate</span>
+        </div>
+        <div class="kpi-card">
+          <span class="val">0.4 s</span>
+          <span class="lbl">LCP load time</span>
+        </div>
+        <div class="kpi-card">
+          <span class="val">100/100</span>
+          <span class="lbl">Google PageSpeed score</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content + Sidebar -->
+  <div class="wrap content-layout">
+    <article class="main-content">
+      <h2>1. The challenge</h2>
+      <p>Northline was running an aging website built on a heavyweight CMS with numerous redundant plugins. The result: load times over 4.2 seconds on mobile, a high bounce rate (68%) and poor visibility in search engines.</p>
+      <p>The goal was clear: rebuild the user experience from scratch around a strategy focused on raw speed, message clarity and optimization for AI-driven queries.</p>
+
+      <h2>2. The Nexora technical solution</h2>
+      <p>We went with a radical approach: zero heavy client-side frameworks, semantic HTML5, modern CSS and minimal JavaScript executed asynchronously.</p>
+      <ul>
+        <li><strong>Native Web Architecture:</strong> A structure stripped of all unnecessary code, reducing page weight from 3.2 MB to under 180 KB.</li>
+        <li><strong>Semantic Markup &amp; Schema.org:</strong> Full integration of rich structured data to maximize exposure in Google snippets and AI-generated answers (GEO).</li>
+        <li><strong>Serverless Infrastructure:</strong> Edge deployment with server response times (TTFB) under 50 ms.</li>
+      </ul>
+
+      <div class="quote-card">
+        <blockquote>“Nexora's work transformed our online presence. The site loads instantly and our quote requests more than doubled in two months.”</blockquote>
+        <cite>— Northline Marketing Department</cite>
+      </div>
+
+      <h2>3. Measured results</h2>
+      <p>Three months after the new version went live, analytics confirm the impact of the technical rebuild on the business:</p>
+      <ul>
+        <li><strong>Conversion:</strong> A 140% increase in qualified contact requests.</li>
+        <li><strong>SEO &amp; GEO:</strong> First-page rankings on 12 strategic keywords and frequent citations by AI engines.</li>
+        <li><strong>Resources:</strong> Server carbon footprint reduced by 75%.</li>
+      </ul>
+    </article>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="side-card">
+        <h3>Project Sheet</h3>
+        <ul class="meta-list">
+          <li><span class="lbl">Client</span> <span class="val">Northline</span></li>
+          <li><span class="lbl">Industry</span> <span class="val">B2B / Technology</span></li>
+          <li><span class="lbl">Duration</span> <span class="val">4 weeks</span></li>
+          <li><span class="lbl">Stack</span> <span class="val">HTML5, CSS, Edge</span></li>
+        </ul>
+        <a class="btn-full" href="index.html#contact">Start your project ↗</a>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div>
+      <strong class="footer-brand">Nexora</strong> · Strategy, design &amp; technology · Lille, France
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#services">Services</a>
+      <a href="etude-de-cas.html">Northline case study</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Back-to-top button (global styles in theme.css §14) -->
+<button id="scrollToTopBtn" aria-label="Back to top of page" title="Back to top">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M18 15l-6-6-6 6"/>
+  </svg>
+</button>
+
+<script src="../js/site.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SEO &amp; AI Visibility — Nexora | Digital Agency in Lille</title>
+<meta name="description" content="Optimization for search engines and AI answer engines (GEO): organic SEO, synthetic visibility and structured data.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="theme-color" content="#08111f">
+<meta name="author" content="Nexora">
+<!-- LOCAL MODE (file:// or http://localhost) — the nexora.fr domain is not acquired yet.
+     The tags below (canonical, hreflang) require absolute URLs: they are
+     disabled here and will be re-enabled as-is in production, with
+     https://nexora.fr as the origin.
+<link rel="canonical" href="https://nexora.fr/en/seo-visibilite-ia.html">
+<link rel="alternate" hreflang="fr" href="https://nexora.fr/seo-visibilite-ia.html">
+<link rel="alternate" hreflang="en" href="https://nexora.fr/en/seo-visibilite-ia.html">
+<link rel="alternate" hreflang="de" href="https://nexora.fr/de/seo-visibilite-ia.html">
+<link rel="alternate" hreflang="x-default" href="https://nexora.fr/seo-visibilite-ia.html">
+-->
+
+<!-- Assets point to the site root (theme.css, favicons live at the root) -->
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+
+<!-- Open Graph / Social (relative URLs in local mode,
+     switch back to absolute https://nexora.fr/… in production) -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Nexora">
+<meta property="og:title" content="SEO &amp; AI Visibility — Nexora">
+<meta property="og:description" content="Position your brand on Google and with AI agents (ChatGPT, Claude, Perplexity).">
+<meta property="og:url" content="../seo-visibilite-ia.html">
+<meta property="og:image" content="../og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Nexora — SEO and AI visibility (GEO)">
+
+<!-- Security (X-Content-Type-Options & frame-ancestors: configure as HTTP headers on the server) -->
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'">
+
+<!-- Shared stylesheet -->
+<link rel="stylesheet" href="../theme.css">
+
+<!-- Structured data: Service + FAQPage
+     ⚠️ LOCAL MODE: JSON-LD is disabled (Schema.org @id values require
+     stable absolute URLs). Re-enable as-is in production once the
+     nexora.fr domain is acquired.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://nexora.fr/en/seo-visibilite-ia.html#service",
+      "name": "SEO & AI Visibility (Generative Engine Optimization)",
+      "provider": {
+        "@id": "https://nexora.fr/#organization"
+      },
+      "serviceType": "Search Engine Optimization & Generative Engine Optimization",
+      "description": "Organic SEO strategies and optimization for search engines and AI answer engines.",
+      "areaServed": "France",
+      "inLanguage": "en",
+      "mainEntityOfPage": { "@id": "https://nexora.fr/en/seo-visibilite-ia.html" }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://nexora.fr/en/seo-visibilite-ia.html#faq",
+      "inLanguage": "en",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is optimization for AI engines (GEO)?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Generative Engine Optimization (GEO) means structuring and writing content so that it is picked up as a trusted source by AI assistants when they answer users."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take to see SEO results?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The first effects on indexing and rankings generally appear within 2 to 4 months, depending on the sector's competitiveness and the site's initial authority."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does SEO replace paid advertising (SEA)?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SEO builds lasting value and sustainable organic traffic without cost per click, while SEA provides an immediate lever. The two approaches are complementary."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer an analysis of our existing website?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we run a pre-audit during the first meeting to assess your platform's acquisition potential."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+-->
+
+<style>
+/* Page-specific styles for the SEO & AI Visibility page
+   (#scrollToTopBtn is global in theme.css §14) */
+
+/* JSON-LD technical block */
+.tech-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+  padding: 60px;
+}
+
+.code-preview {
+  background: #040810;
+  border: 1px solid rgba(255, 255, 255, .12);
+  border-radius: 16px;
+  padding: 20px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 12px;
+  color: #73dfff;
+  line-height: 1.7;
+  overflow-x: auto;
+}
+
+.code-preview .comment { color: #52637a; }
+.code-preview .string { color: #a9e8ff; }
+
+/* Small local utility classes (replace the removed inline styles) */
+.kicker-cyan { color: var(--cyan); }
+.h2-white { color: var(--white); }
+.lead-dim { color: #92a4bb; margin: 0; }
+.type-card p { color: var(--muted); font-size: 14px; }
+.type-card ul {
+  padding-left: 18px;
+  margin: 20px 0 0;
+  font-size: 14px;
+  color: var(--muted);
+  list-style: disc;
+}
+.type-card li { margin-bottom: 8px; }
+.section-light {
+  background: var(--white);
+  border-top: 1px solid var(--line);
+}
+
+@media (max-width: 900px) {
+  .tech-section {
+    grid-template-columns: 1fr;
+    padding: 30px;
+  }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="nav">
+      <a class="brand" href="index.html" aria-label="Nexora — Home">
+        <img src="../favicon.png" alt="Nexora" class="brand-icon" width="28" height="28" loading="eager">
+        Nexora
+      </a>
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="index.html#services">Services</a>
+        <a href="index.html#expertise">Expertise</a>
+        <a href="index.html#methode">Method</a>
+        <a href="index.html#equipe">Team</a>
+        <a href="index.html#realisations">Work</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="nav-cta" href="index.html#contact">Let's talk about your project ↗</a>
+
+        <!-- Language switch: zero JS (details/summary).
+             LOCAL MODE: relative links to the matching page in each language;
+             in production, switch back to absolute https://nexora.fr/…
+             URLs with cross-linked hreflang. -->
+        <details class="lang-switch">
+          <summary aria-label="Choose language">EN ▾</summary>
+          <ul class="lang-menu">
+            <li><a href="../seo-visibilite-ia.html" lang="fr">Français</a></li>
+            <li><a href="seo-visibilite-ia.html" lang="en" aria-current="true">English</a></li>
+            <li><a href="../de/seo-visibilite-ia.html" lang="de">Deutsch</a></li>
+          </ul>
+        </details>
+
+        <button class="menu" type="button" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">☰</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <!-- Hero -->
+  <section class="page-hero accent-cyan">
+    <div class="wrap">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html" title="Back to the home page">Home</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <a href="index.html#services" title="See all services">Services</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <span class="current" aria-current="page">SEO &amp; AI Visibility</span>
+      </nav>
+
+      <div class="kicker">SEO &amp; GEO</div>
+      <h1>Be visible where your customers search and ask questions.</h1>
+      <p class="page-hero-lead">From classic technical SEO to optimization for AI answer engines (GEO), we position your company at the top of strategic queries.</p>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <b>+140%</b>
+          <span>Average qualified traffic gained</span>
+        </div>
+        <div class="stat-item">
+          <b>Top 3</b>
+          <span>Target positions for your keywords</span>
+        </div>
+        <div class="stat-item">
+          <b>GEO ready</b>
+          <span>Indexing by AI engines</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pillars -->
+  <section class="section">
+    <div class="wrap">
+      <div class="kicker">MULTI-CHANNEL STRATEGY</div>
+      <h2>Maximum visibility on today's and tomorrow's web.</h2>
+
+      <div class="features-grid">
+        <article class="feature-card">
+          <h3>Technical SEO &amp; Audit</h3>
+          <p>In-depth analysis of crawling, indexing, load times and HTML markup to remove every technical barrier.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Semantic SEO &amp; Content</h3>
+          <p>An editorial strategy focused on your prospects' search intent to capture qualified traffic that is ready to convert.</p>
+        </article>
+        <article class="feature-card">
+          <h3>GEO &amp; AI Citations</h3>
+          <p>Content optimization to be cited as a reference by Perplexity, ChatGPT, Claude and Google AI Overviews.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech / Schema.org -->
+  <section class="wrap">
+    <div class="tech-section pipeline-section">
+      <div>
+        <div class="kicker kicker-cyan">STRUCTURED DATA</div>
+        <h2 class="h2-white">Speak the language of algorithms.</h2>
+        <p class="lead-dim">By integrating rich, precise JSON-LD schemas, we enable search engines and LLMs to instantly understand your offer and your expertise.</p>
+      </div>
+      <div class="code-preview" role="img" aria-label="Example of JSON-LD code for AI and SEO indexing">
+        <span class="comment">// JSON-LD for AI &amp; SEO indexing</span><br>
+        {<br>
+        &nbsp;&nbsp;<span class="string">"@context"</span>: <span class="string">"https://schema.org"</span>,<br>
+        &nbsp;&nbsp;<span class="string">"@type"</span>: <span class="string">"Service"</span>,<br>
+        &nbsp;&nbsp;<span class="string">"name"</span>: <span class="string">"SEO &amp; AI Visibility"</span>,<br>
+        &nbsp;&nbsp;<span class="string">"provider"</span>: { <span class="string">"@type"</span>: <span class="string">"Organization"</span>, <span class="string">"name"</span>: <span class="string">"Nexora"</span> }<br>
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Engagement models -->
+  <section class="section">
+    <div class="wrap">
+      <div class="kicker">OUR ENGAGEMENT MODELS</div>
+      <h2>Interventions tailored to your maturity.</h2>
+
+      <div class="types-grid">
+        <div class="type-card">
+          <div>
+            <h3>SEO / GEO Audit &amp; Strategy</h3>
+            <p>A complete review of your current visibility and a prioritized roadmap to outrank your competitors.</p>
+            <ul>
+              <li>Technical &amp; UX audit</li>
+              <li>Keyword &amp; search intent study</li>
+              <li>AI presence analysis</li>
+            </ul>
+          </div>
+        </div>
+        <div class="type-card">
+          <div>
+            <h3>Monthly Support &amp; Link Building</h3>
+            <p>Continuous monitoring to maintain and improve your positions against algorithm changes.</p>
+            <ul>
+              <li>Regular on-page optimizations</li>
+              <li>Authority building (link building)</li>
+              <li>Performance &amp; ROI reports</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-light">
+    <div class="wrap">
+      <div class="kicker">FREQUENTLY ASKED QUESTIONS</div>
+      <h2>Understanding SEO and AI visibility.</h2>
+
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3>What is optimization for AI engines (GEO)?</h3>
+          <p>Generative Engine Optimization (GEO) means structuring and writing content so that it is picked up as a trusted source by AI assistants when they answer users.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How long does it take to see SEO results?</h3>
+          <p>The first effects on indexing and rankings generally appear within 2 to 4 months, depending on the sector's competitiveness and the site's initial authority.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Does SEO replace paid advertising (SEA)?</h3>
+          <p>SEO builds lasting value and sustainable organic traffic without cost per click, while SEA provides an immediate lever. The two approaches are complementary.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do you offer an analysis of our existing website?</h3>
+          <p>Yes, we run a pre-audit during the first meeting to assess your platform's acquisition potential.</p>
+        </div>
+      </div>
+
+      <div class="cta-box">
+        <h2>Boost your visibility today</h2>
+        <p>Analysis of your current positioning and strategic recommendations.</p>
+        <a class="btn btn-light" href="index.html#contact">Request a study ↗</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div>
+      <strong class="footer-brand">Nexora</strong> · Strategy, design &amp; technology · Lille, France
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#services">Services</a>
+      <a href="seo-visibilite-ia.html">SEO &amp; AI Visibility</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Back-to-top button (global styles in theme.css §14) -->
+<button id="scrollToTopBtn" aria-label="Back to top of page" title="Back to top">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M18 15l-6-6-6 6"/>
+  </svg>
+</button>
+
+<script src="../js/site.js" defer></script>
+</body>
+</html>

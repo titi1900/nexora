@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="de" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Webarchitektur & SEO-/KI-Optimierung (GEO) — Nexora Lille</title>
+
+<meta name="description" content="Entdecken Sie unsere technischen Standards: nachhaltig entwickelter HTML/CSS-Code, WCAG-Barrierefreiheit, Core Web Vitals mit Zielwert 100/100 und strukturierte Daten für SEO- und KI-Sichtbarkeit.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="theme-color" content="#08111f">
+<meta name="author" content="Nexora">
+
+<!-- LOCAL MODE (file:// oder http://localhost) – die Domain nexora.fr ist noch nicht registriert.
+     Die folgenden Tags (canonical, hreflang) benötigen absolute URLs und
+     werden in der Produktion mit https://nexora.fr wieder aktiviert.
+
+<link rel="canonical" href="https://nexora.fr/de/expertise.html">
+<link rel="alternate" hreflang="fr" href="https://nexora.fr/expertise.html">
+<link rel="alternate" hreflang="en" href="https://nexora.fr/en/expertise.html">
+<link rel="alternate" hreflang="de" href="https://nexora.fr/de/expertise.html">
+<link rel="alternate" hreflang="x-default" href="https://nexora.fr/expertise.html">
+-->
+
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="de_DE">
+<meta property="og:site_name" content="Nexora">
+<meta property="og:title" content="Webarchitektur & SEO-/KI-Optimierung — Nexora">
+<meta property="og:description" content="Strenge technische Standards: digitale Nachhaltigkeit, extrem schnelle Ladezeiten und fortschrittliches semantisches Markup.">
+<meta property="og:url" content="../expertise.html">
+<meta property="og:image" content="../og-expertise-seo.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Nexora — Webarchitektur, SEO und KI-Optimierung">
+
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'">
+
+<link rel="stylesheet" href="../theme.css">
+
+<style>
+.metrics-grid {
+  grid-template-columns: repeat(4, 1fr);
+  max-width: none;
+}
+
+.spec-box {
+  background: #0d1626;
+  color: #d0dbe7;
+  border-radius: 16px;
+  padding: 24px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 13px;
+  margin: 25px 0;
+  border: 1px solid rgba(255,255,255,.08);
+}
+
+.spec-box span.key { color: var(--blue); }
+.spec-box span.val { color: var(--gold-deep); }
+
+.pillars-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.pillar-card h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 900px) {
+  .metrics-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<a class="skip" href="#main">Zum Inhalt springen</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="nav">
+
+      <a class="brand" href="index.html" aria-label="Nexora — Startseite">
+        <img src="../favicon.png" alt="Nexora" class="brand-icon" width="28" height="28" loading="eager">
+        Nexora
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Hauptnavigation">
+        <a href="index.html#services">Leistungen</a>
+        <a href="index.html#expertise">Expertise</a>
+        <a href="index.html#methode">Methode</a>
+        <a href="index.html#equipe">Team</a>
+        <a href="index.html#realisations">Projekte</a>
+        <a href="index.html#contact">Kontakt</a>
+      </nav>
+
+      <div class="nav-actions">
+
+        <a class="nav-cta" href="index.html#contact">
+          Website analysieren ↗
+        </a>
+
+        <details class="lang-switch">
+          <summary aria-label="Sprache wählen">DE ▾</summary>
+          <ul class="lang-menu">
+            <li><a href="../expertise.html" lang="fr">Français</a></li>
+            <li><a href="../en/expertise.html" lang="en">English</a></li>
+            <li><a href="expertise.html" lang="de" aria-current="true">Deutsch</a></li>
+          </ul>
+        </details>
+
+        <button class="menu" type="button" id="menuBtn" aria-label="Menü öffnen" aria-expanded="false" aria-controls="navLinks">☰</button>
+
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero accent-blue">
+    <div class="wrap">
+
+      <nav class="breadcrumb" aria-label="Brotkrumennavigation">
+        <a href="index.html" title="Zur Startseite">Startseite</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <a href="index.html#expertise" title="Alle Kompetenzbereiche anzeigen">Expertise</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <span class="current" aria-current="page">SEO- & KI-Architektur</span>
+      </nav>
+
+      <div class="kicker">Technische Expertise · Webstandards</div>
+
+      <h1>Webarchitektur & SEO-/KI-Optimierung (GEO)</h1>
+
+      <p class="lead">
+        Wir entwickeln schlanke und strukturierte digitale Infrastrukturen,
+        die für nahezu sofortige Ladezeiten und eine optimale Verständlichkeit
+        durch moderne Suchmaschinen und KI-Systeme ausgelegt sind.
+      </p>
+
+      <div class="metrics-grid">
+
+        <div class="metric-card">
+          <span class="val">100/100</span>
+          <span class="lbl">Core Web Vitals Zielwert</span>
+        </div>
+
+        <div class="metric-card">
+          <span class="val">&lt; 0,8 s</span>
+          <span class="lbl">Largest Contentful Paint (LCP)</span>
+        </div>
+
+        <div class="metric-card">
+          <span class="val">100 %</span>
+          <span class="lbl">Schema.org- & GEO-Markup</span>
+        </div>
+
+        <div class="metric-card">
+          <span class="val">AA / AAA</span>
+          <span class="lbl">WCAG 2.1 Barrierefreiheit</span>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <div class="wrap content-layout">
+
+    <article class="main-content">
+
+      <h2>1. Generative Engine Optimization (GEO) & KI-Sichtbarkeit</h2>
+
+      <p>
+        Traditionelle Suchmaschinen entwickeln sich zunehmend zu KI-gestützten
+        Antwortsystemen wie ChatGPT, Perplexity oder Google AI Overviews.
+        Damit ein Unternehmen von einer KI als vertrauenswürdige Referenz
+        genannt wird, muss seine Website strukturierte, überprüfbare und
+        maschinenlesbare Fakten bereitstellen.
+      </p>
+
+      <div class="spec-box">
+        // Beispiel für den von Nexora eingesetzten Structured-Data-Standard<br>
+        <span class="key">"@context"</span>: <span class="val">"https://schema.org"</span>,<br>
+        <span class="key">"@type"</span>: <span class="val">"Organization"</span>,<br>
+        <span class="key">"knowsAbout"</span>: [
+        <span class="val">"Web Performance"</span>,
+        <span class="val">"Accessibility"</span>,
+        <span class="val">"GEO Optimization"</span>
+        ],<br>
+        <span class="key">"mainEntityOfPage"</span>: <span class="val">"https://nexora.fr"</span>
+      </div>
+
+      <h2>2. Die drei Säulen unserer Codequalität</h2>
+
+      <div class="pillars-list">
+
+        <div class="pillar-card">
+          <h3>
+            Digitale Nachhaltigkeit & Keine unnötigen Abhängigkeiten
+            <span class="badge-pill">Performance</span>
+          </h3>
+
+          <p>
+            Wir verzichten auf überdimensionierte Frameworks, wenn semantisches
+            HTML5, modernes CSS und Vanilla JavaScript ausreichen. Das Ergebnis
+            sind Websites mit oft weniger als 200 KB Umfang, kürzeren Ladezeiten
+            und geringerem Ressourcenverbrauch.
+          </p>
+        </div>
+
+        <div class="pillar-card">
+          <h3>
+            Native Barrierefreiheit (WCAG 2.1)
+            <span class="badge-pill">Inklusion</span>
+          </h3>
+
+          <p>
+            Jede interaktive Komponente ist vollständig per Tastatur bedienbar,
+            erfüllt strenge Kontrastanforderungen (mindestens 4,5:1) und
+            verwendet geeignete ARIA-Attribute für Screenreader und
+            unterstützende Technologien.
+          </p>
+        </div>
+
+        <div class="pillar-card">
+          <h3>
+            Sichere Architektur & Strikte CSP
+            <span class="badge-pill">Sicherheit</span>
+          </h3>
+
+          <p>
+            Wir implementieren verstärkte Sicherheitsrichtlinien mit Content
+            Security Policy (CSP), nativer XSS-Abwehr, sicheren HTTP-Headern
+            und wirksamem Spamschutz für Formulare, ohne die Benutzererfahrung
+            zu beeinträchtigen.
+          </p>
+        </div>
+
+      </div>
+
+      <h2>3. Website-Audit & Modernisierung bestehenden Codes</h2>
+
+      <p>
+        Falls Ihre Website bereits existiert, jedoch unter geringer Performance,
+        technischer Verschuldung oder mangelnder Sichtbarkeit leidet, analysieren
+        und überarbeiten wir den Quellcode, entfernen blockierendes JavaScript
+        und optimieren die semantische Struktur, ohne bestehende Suchmaschinen-
+        Rankings zu gefährden.
+      </p>
+
+    </article>
+
+    <aside class="sidebar">
+
+      <div class="side-card">
+
+        <h3>Benötigen Sie ein SEO- oder Code-Audit?</h3>
+
+        <p>
+          Erhalten Sie eine technische Analyse Ihrer Website hinsichtlich
+          Core Web Vitals, KI-Tauglichkeit, Barrierefreiheit und Architektur.
+        </p>
+
+        <a class="btn-full" href="index.html#contact">
+          Audit anfordern ↗
+        </a>
+
+      </div>
+
+    </aside>
+
+  </div>
+
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+
+    <div>
+      <strong class="footer-brand">Nexora</strong>
+      · Strategie, Design & Technologie · Lille, Frankreich
+    </div>
+
+    <div class="footer-links">
+      <a href="index.html#services">Leistungen</a>
+      <a href="index.html#expertise">Expertise</a>
+      <a href="index.html#methode">Methode</a>
+      <a href="index.html#equipe">Team</a>
+      <a href="index.html#realisations">Projekte</a>
+      <a href="index.html#contact">Kontakt</a>
+    </div>
+
+  </div>
+</footer>
+
+<button id="scrollToTopBtn" aria-label="Zum Seitenanfang" title="Nach oben">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M18 15l-6-6-6 6"/>
+  </svg>
+</button>
+
+<script src="../js/site.js" defer></script>
+
+</body>
+</html>

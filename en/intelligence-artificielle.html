@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Artificial Intelligence — Nexora | Digital Agency in Lille</title>
+<meta name="description" content="Tailored AI solutions deployment: LLM integration, autonomous agents, RAG architectures and sovereign automation of your business processes.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="theme-color" content="#08111f">
+<meta name="author" content="Nexora">
+<!-- LOCAL MODE (file:// or http://localhost) — the nexora.fr domain is not acquired yet.
+     The tags below (canonical, hreflang) require absolute URLs: they are
+     disabled here and will be re-enabled as-is in production, with
+     https://nexora.fr as the origin.
+<link rel="canonical" href="https://nexora.fr/en/intelligence-artificielle.html">
+<link rel="alternate" hreflang="fr" href="https://nexora.fr/intelligence-artificielle.html">
+<link rel="alternate" hreflang="en" href="https://nexora.fr/en/intelligence-artificielle.html">
+<link rel="alternate" hreflang="de" href="https://nexora.fr/de/intelligence-artificielle.html">
+<link rel="alternate" hreflang="x-default" href="https://nexora.fr/intelligence-artificielle.html">
+-->
+
+<!-- Assets point to the site root (theme.css, favicons live at the root) -->
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+
+<!-- Open Graph / Social (relative URLs in local mode,
+     switch back to absolute https://nexora.fr/… in production) -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Nexora">
+<meta property="og:title" content="Artificial Intelligence — Nexora">
+<meta property="og:description" content="Custom AI agents, RAG architectures and business workflow automation with strict respect for your data confidentiality.">
+<meta property="og:url" content="../intelligence-artificielle.html">
+<meta property="og:image" content="../og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Nexora — Artificial intelligence, AI agents and RAG architectures">
+
+<!-- Security (X-Content-Type-Options & frame-ancestors: configure as HTTP headers on the server) -->
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'">
+
+<!-- Shared stylesheet -->
+<link rel="stylesheet" href="../theme.css">
+
+<!-- Structured data: Service + FAQPage
+     ⚠️ LOCAL MODE: JSON-LD is disabled (Schema.org @id values require
+     stable absolute URLs). Re-enable as-is in production once the
+     nexora.fr domain is acquired.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://nexora.fr/en/intelligence-artificielle.html#service",
+      "name": "Artificial Intelligence Solutions & Integration",
+      "provider": {
+        "@id": "https://nexora.fr/#organization"
+      },
+      "serviceType": "Artificial Intelligence Consulting & Engineering",
+      "description": "AI application development, secure business assistants, RAG and model fine-tuning for companies.",
+      "areaServed": "France",
+      "inLanguage": "en",
+      "mainEntityOfPage": { "@id": "https://nexora.fr/en/intelligence-artificielle.html" }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://nexora.fr/en/intelligence-artificielle.html#faq",
+      "inLanguage": "en",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Will our data be used to train public models?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No, that is an absolute priority for us. We use enterprise APIs with guaranteed confidentiality, or we deploy open-source models on your own servers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take to deploy an initial POC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Typically, a functional Proof of Concept (POC) is ready in 2 to 4 weeks to validate technical feasibility and business ROI before any large-scale rollout."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you prevent language model hallucinations?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Thanks to RAG architectures: the AI answers exclusively from the reference documents provided and always cites the source of its information."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you support change management and adoption?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we train your operational teams directly in prompt engineering and in the best practices for using their new tools."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+-->
+
+<style>
+/* Page-specific styles for the Artificial Intelligence page
+   (#scrollToTopBtn is global in theme.css §14) */
+
+/* Terminal / RAG */
+.terminal-window {
+  background: #030712;
+  border: 1px solid rgba(255, 255, 255, .12);
+  border-radius: 16px;
+  padding: 24px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 13px;
+  margin-top: 24px;
+  line-height: 1.8;
+}
+
+.term-line {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.term-tag {
+  background: rgba(157, 140, 255, .2);
+  color: var(--violet);
+  padding: 1px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.term-text { color: #d1d5db; }
+.term-highlight { color: var(--cyan); }
+
+/* Small local utility classes (replace the removed inline styles) */
+.kicker-violet { color: var(--violet); }
+.h2-white { color: var(--white); }
+.lead-muted { color: #a3b3c7; max-width: 680px; }
+.security-card-main h3 { margin: 0 0 10px; font-size: 22px; }
+.security-card-main p { margin: 0; color: #a3b3c7; font-size: 14px; }
+.security-card-badge { text-align: right; }
+.badge-violet {
+  background: rgba(157, 140, 255, .2);
+  color: var(--violet);
+  border: 1px solid rgba(157, 140, 255, .4);
+}
+.section-light {
+  background: var(--white);
+  border-top: 1px solid var(--line);
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="nav">
+      <a class="brand" href="index.html" aria-label="Nexora — Home">
+        <img src="../favicon.png" alt="Nexora" class="brand-icon" width="28" height="28" loading="eager">
+        Nexora
+      </a>
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="index.html#services">Services</a>
+        <a href="index.html#expertise">Expertise</a>
+        <a href="index.html#methode">Method</a>
+        <a href="index.html#equipe">Team</a>
+        <a href="index.html#realisations">Work</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="nav-cta" href="index.html#contact">Assess an AI use case ↗</a>
+
+        <!-- Language switch: zero JS (details/summary).
+             LOCAL MODE: relative links to the matching page in each language;
+             in production, switch back to absolute https://nexora.fr/…
+             URLs with cross-linked hreflang. -->
+        <details class="lang-switch">
+          <summary aria-label="Choose language">EN ▾</summary>
+          <ul class="lang-menu">
+            <li><a href="../intelligence-artificielle.html" lang="fr">Français</a></li>
+            <li><a href="intelligence-artificielle.html" lang="en" aria-current="true">English</a></li>
+            <li><a href="../de/intelligence-artificielle.html" lang="de">Deutsch</a></li>
+          </ul>
+        </details>
+
+        <button class="menu" type="button" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">☰</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <!-- Hero -->
+  <section class="page-hero accent-violet">
+    <div class="wrap">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html" title="Back to the home page">Home</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <a href="index.html#services" title="See all services">Services</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <span class="current" aria-current="page">Artificial Intelligence</span>
+      </nav>
+
+      <div class="kicker">AGENTS, RAG &amp; DATA ENGINEERING</div>
+      <h1>Artificial Intelligence built into the core of your business.</h1>
+      <p class="page-hero-lead">Far from fads and gadgets, we develop useful, secure and sovereign AI architectures to automate your operations and multiply your teams' productivity.</p>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <b>100%</b>
+          <span>GDPR compliance &amp; sovereign hosting</span>
+        </div>
+        <div class="stat-item">
+          <b>Custom RAG</b>
+          <span>Real-time analysis of your document bases</span>
+        </div>
+        <div class="stat-item">
+          <b>0 leaks</b>
+          <span>Isolated models, no public retraining</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RAG architecture -->
+  <section class="wrap">
+    <div class="architecture-section">
+      <div class="kicker kicker-violet">TECHNICAL DEPLOYMENT</div>
+      <h2 class="h2-white">RAG Architecture (Retrieval-Augmented Generation)</h2>
+      <p class="lead-muted">We connect language models to your company's living memory (ERP, DMS, databases) without ever exposing your sensitive data externally.</p>
+
+      <div class="terminal-window">
+        <div class="term-line">
+          <span class="term-tag">01. INGESTION</span>
+          <span class="term-text">Secure vectorization of your confidential documents (PDF, APIs, SQL).</span>
+        </div>
+        <div class="term-line">
+          <span class="term-tag">02. RETRIEVAL</span>
+          <span class="term-text">High-precision semantic search across <span class="term-highlight">VectorDB (pgvector / Qdrant)</span>.</span>
+        </div>
+        <div class="term-line">
+          <span class="term-tag">03. SYNTHESIS</span>
+          <span class="term-text">Generation of reliable answers with verifiable sources and citations by the AI agent.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Use cases -->
+  <section class="section">
+    <div class="wrap">
+      <div class="kicker">CONCRETE APPLICATIONS</div>
+      <h2>Where does AI deliver real value?</h2>
+
+      <div class="usecases-grid">
+        <article class="usecase-card">
+          <div>
+            <h3>Intelligent Business Assistants</h3>
+            <p>Give your teams a copilot able to instantly query all of your internal knowledge bases.</p>
+          </div>
+          <span class="badge">Operational time savings</span>
+        </article>
+        <article class="usecase-card">
+          <div>
+            <h3>Document &amp; Records Processing</h3>
+            <p>Automatic extraction of structured data from invoices, contracts or complex reports with a controlled accuracy rate.</p>
+          </div>
+          <span class="badge">Automation &amp; zero errors</span>
+        </article>
+        <article class="usecase-card">
+          <div>
+            <h3>B2B Conversational Agents</h3>
+            <p>Customer service agents that qualify requests, generate preliminary quotes and sync data straight into your CRM.</p>
+          </div>
+          <span class="badge">Conversion &amp; 24/7 support</span>
+        </article>
+      </div>
+
+      <div class="security-card">
+        <div class="security-card-main">
+          <h3>Data Security &amp; Sovereignty</h3>
+          <p>Your healthcare, financial or strategic data stays exclusively on secured infrastructures in France or Europe (Mistral AI, SecNumCloud hosting).</p>
+        </div>
+        <div class="security-card-badge">
+          <span class="badge badge-violet">GDPR &amp; ISO 27001 ready</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-light">
+    <div class="wrap">
+      <div class="kicker">FREQUENTLY ASKED QUESTIONS</div>
+      <h2>Everything about integrating AI in business.</h2>
+
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3>Will our data be used to train public models?</h3>
+          <p>No, that is an absolute priority for us. We use enterprise APIs with guaranteed confidentiality, or we deploy open-source models on your own servers.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How long does it take to deploy an initial POC?</h3>
+          <p>Typically, a functional Proof of Concept (POC) is ready in 2 to 4 weeks to validate technical feasibility and business ROI before any large-scale rollout.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How do you prevent language model hallucinations?</h3>
+          <p>Thanks to RAG architectures: the AI answers exclusively from the reference documents provided and always cites the source of its information.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do you support change management and adoption?</h3>
+          <p>Yes, we train your operational teams directly in prompt engineering and in the best practices for using their new tools.</p>
+        </div>
+      </div>
+
+      <div class="cta-box">
+        <h2>A project or an AI automation idea?</h2>
+        <p>Let's examine the technical feasibility and economic impact for your organization together.</p>
+        <a class="btn btn-light" href="index.html#contact">Schedule a technical discussion ↗</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div>
+      <strong class="footer-brand">Nexora</strong> · Strategy, design &amp; technology · Lille, France
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#services">Services</a>
+      <a href="intelligence-artificielle.html">Artificial Intelligence</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Back-to-top button (global styles in theme.css §14) -->
+<button id="scrollToTopBtn" aria-label="Back to top of page" title="Back to top">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M18 15l-6-6-6 6"/>
+  </svg>
+</button>
+
+<script src="../js/site.js" defer></script>
+</body>
+</html>

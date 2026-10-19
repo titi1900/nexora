@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Websites &amp; digital products — Nexora | Digital Agency in Lille</title>
+<meta name="description" content="Ultra-fast websites and digital products: semantic HTML, native CSS, 100/100 Core Web Vitals, WCAG accessibility and scalable architecture.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="theme-color" content="#08111f">
+<meta name="author" content="Nexora">
+<!-- LOCAL MODE (file:// or http://localhost) — the nexora.fr domain is not acquired yet.
+     The tags below (canonical, hreflang) require absolute URLs: they are
+     disabled here and will be re-enabled as-is in production, with
+     https://nexora.fr as the origin.
+<link rel="canonical" href="https://nexora.fr/en/sites-web-produits.html">
+<link rel="alternate" hreflang="fr" href="https://nexora.fr/sites-web-produits.html">
+<link rel="alternate" hreflang="en" href="https://nexora.fr/en/sites-web-produits.html">
+<link rel="alternate" hreflang="de" href="https://nexora.fr/de/sites-web-produits.html">
+<link rel="alternate" hreflang="x-default" href="https://nexora.fr/sites-web-produits.html">
+-->
+
+<!-- Assets point to the site root (theme.css, favicons live at the root) -->
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+
+<!-- Open Graph / Social (relative URLs in local mode,
+     switch back to absolute https://nexora.fr/… in production) -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Nexora">
+<meta property="og:title" content="Websites &amp; digital products — Nexora">
+<meta property="og:description" content="Fast, accessible and sustainable websites and digital products. Zero superfluous frameworks, excellent Core Web Vitals.">
+<meta property="og:url" content="../sites-web-produits.html">
+<meta property="og:image" content="../og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Nexora — High-performance websites and digital products">
+
+<!-- Security (X-Content-Type-Options & frame-ancestors: configure as HTTP headers on the server) -->
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'">
+
+<!-- Shared stylesheet -->
+<link rel="stylesheet" href="../theme.css">
+
+<!-- Structured data: Service + FAQPage
+     ⚠️ LOCAL MODE: JSON-LD is disabled (Schema.org @id values require
+     stable absolute URLs). Re-enable as-is in production once the
+     nexora.fr domain is acquired.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://nexora.fr/en/sites-web-produits.html#service",
+      "name": "Websites & digital products",
+      "provider": {
+        "@id": "https://nexora.fr/#organization"
+      },
+      "serviceType": "Web Design & Front-end Development",
+      "description": "High-performance websites and digital products: semantic HTML, native CSS, WCAG accessibility, Core Web Vitals and scalable architecture.",
+      "areaServed": "France",
+      "inLanguage": "en",
+      "mainEntityOfPage": { "@id": "https://nexora.fr/en/sites-web-produits.html" }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://nexora.fr/en/sites-web-produits.html#faq",
+      "inLanguage": "en",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do you work with frameworks (React, Vue, Next…)?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only when the product's complexity genuinely justifies it. In most cases, semantic HTML + modern CSS + a little JS is enough and delivers far better performance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does a brochure website take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A well-scoped 5 to 10-page site can be delivered in 3 to 6 weeks, including audits and testing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you handle hosting and deployment?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We set up fast Edge/serverless hosting, security headers (CSP, etc.) and all the necessary redirects."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will the site be accessible (WCAG)?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Contrast, keyboard navigation, ARIA attributes and semantic structure are built in from the design phase, not bolted on afterwards."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+-->
+
+<style>
+/* Page-specific styles for the Websites & digital products page
+   (#scrollToTopBtn is global in theme.css §14) */
+
+/* Process steps (specific) */
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 30px;
+}
+
+.process-box {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: var(--r-sm);
+  padding: 20px;
+}
+
+.process-box h3 {
+  font-size: 15px;
+  color: var(--cyan);
+  margin: 0 0 8px;
+}
+
+.process-box p {
+  font-size: 12px;
+  color: #a3b3c7;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Small local utility classes (replace the removed inline styles) */
+.kicker-cyan { color: var(--cyan); }
+.h2-white { color: var(--white); }
+.lead-dim { color: #a3b3c7; max-width: 650px; margin: 0; }
+.gov-card-cyan { border-color: rgba(104, 216, 255, 0.2); }
+.gov-card-main h3 { margin: 0 0 10px; font-size: 22px; color: var(--white); }
+.gov-card-main p { margin: 0; color: #a3b3c7; font-size: 14px; }
+.gov-card-badge { text-align: right; }
+.badge-cyan {
+  background: rgba(104, 216, 255, .2);
+  color: var(--cyan);
+  border: 1px solid rgba(104, 216, 255, .4);
+}
+.section-light {
+  background: var(--white);
+  border-top: 1px solid var(--line);
+}
+
+@media (max-width: 900px) {
+  .process-steps {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="nav">
+      <a class="brand" href="index.html" aria-label="Nexora — Home">
+        <img src="../favicon.png" alt="Nexora" class="brand-icon" width="28" height="28" loading="eager">
+        Nexora
+      </a>
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="index.html#services">Services</a>
+        <a href="index.html#expertise">Expertise</a>
+        <a href="index.html#methode">Method</a>
+        <a href="index.html#equipe">Team</a>
+        <a href="index.html#realisations">Work</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="nav-cta" href="index.html#contact">Start a project ↗</a>
+
+        <!-- Language switch: zero JS (details/summary).
+             LOCAL MODE: relative links to the matching page in each language;
+             in production, switch back to absolute https://nexora.fr/…
+             URLs with cross-linked hreflang. -->
+        <details class="lang-switch">
+          <summary aria-label="Choose language">EN ▾</summary>
+          <ul class="lang-menu">
+            <li><a href="../sites-web-produits.html" lang="fr">Français</a></li>
+            <li><a href="sites-web-produits.html" lang="en" aria-current="true">English</a></li>
+            <li><a href="../de/sites-web-produits.html" lang="de">Deutsch</a></li>
+          </ul>
+        </details>
+
+        <button class="menu" type="button" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">☰</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <!-- Hero -->
+  <section class="page-hero accent-cyan">
+    <div class="wrap">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html" title="Back to the home page">Home</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <a href="index.html#services" title="See all services">Services</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <span class="current" aria-current="page">Websites &amp; digital products</span>
+      </nav>
+
+      <div class="kicker">DESIGN &amp; FRONT-END DEVELOPMENT</div>
+      <h1>Fast, clear and sustainable interfaces.</h1>
+      <p class="page-hero-lead">We build websites and digital products without superfluous frameworks: semantic HTML, modern CSS, minimal JavaScript and an obsession with Core Web Vitals.</p>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <b>&lt; 0.8 s</b>
+          <span>Target Largest Contentful Paint</span>
+        </div>
+        <div class="stat-item">
+          <b>100/100</b>
+          <span>PageSpeed &amp; CWV target</span>
+        </div>
+        <div class="stat-item">
+          <b>WCAG AA</b>
+          <span>Accessibility built in from day one</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="wrap">
+    <div class="pipeline-section">
+      <div class="kicker kicker-cyan">OUR APPROACH</div>
+      <h2 class="h2-white">From idea to code, without technical debt</h2>
+      <p class="lead-dim">A short, precise method to deliver interfaces that load instantly and remain maintainable over time.</p>
+
+      <div class="process-steps">
+        <div class="process-box">
+          <h3>01. Scoping</h3>
+          <p>Business goals, user journeys, technical constraints and content priorities.</p>
+        </div>
+        <div class="process-box">
+          <h3>02. Architecture</h3>
+          <p>Semantic HTML structure, tree, Schema.org and accessible mockups.</p>
+        </div>
+        <div class="process-box">
+          <h3>03. Implementation</h3>
+          <p>Native CSS, async vanilla JS, optimized images and zero-js where possible.</p>
+        </div>
+        <div class="process-box">
+          <h3>04. Measurement</h3>
+          <p>Lighthouse audits, accessibility testing and Core Web Vitals validation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Offerings -->
+  <section class="section">
+    <div class="wrap">
+      <div class="kicker">WHAT WE DELIVER</div>
+      <h2>Custom websites and products.</h2>
+
+      <div class="data-grid">
+        <article class="data-card">
+          <div>
+            <h3>Brochure &amp; corporate websites</h3>
+            <p>A clear, fast and credible presence. Lightweight pages, structured content and conversion optimized from the very first screen.</p>
+          </div>
+          <span class="badge">Native performance</span>
+        </article>
+        <article class="data-card">
+          <div>
+            <h3>SaaS products &amp; interfaces</h3>
+            <p>Dashboards, internal tools or compact web applications, designed for speed and readability.</p>
+          </div>
+          <span class="badge">Action-oriented UX</span>
+        </article>
+        <article class="data-card">
+          <div>
+            <h3>Redesign &amp; modernization</h3>
+            <p>Eliminating technical debt, migrating away from heavy CMSs and rebuilding a clean HTML/CSS foundation.</p>
+          </div>
+          <span class="badge">Zero imposed frameworks</span>
+        </article>
+      </div>
+
+      <div class="gov-card gov-card-cyan">
+        <div class="gov-card-main">
+          <h3>Digital sobriety &amp; maintainability</h3>
+          <p>Less code, fewer dependencies, less maintenance. Every component is designed to last and stay understandable to any developer.</p>
+        </div>
+        <div class="gov-card-badge">
+          <span class="badge badge-cyan">HTML5 · CSS · Vanilla JS</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-light">
+    <div class="wrap">
+      <div class="kicker">FREQUENTLY ASKED QUESTIONS</div>
+      <h2>Clarity on how your interfaces are built.</h2>
+
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3>Do you work with frameworks (React, Vue, Next…)?</h3>
+          <p>Only when the product's complexity genuinely justifies it. In most cases, semantic HTML + modern CSS + a little JS is enough and delivers far better performance.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How long does a brochure website take?</h3>
+          <p>A well-scoped 5 to 10-page site can be delivered in 3 to 6 weeks, including audits and testing.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do you handle hosting and deployment?</h3>
+          <p>Yes. We set up fast Edge/serverless hosting, security headers (CSP, etc.) and all the necessary redirects.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Will the site be accessible (WCAG)?</h3>
+          <p>Yes. Contrast, keyboard navigation, ARIA attributes and semantic structure are built in from the design phase, not bolted on afterwards.</p>
+        </div>
+      </div>
+
+      <div class="cta-box">
+        <h2>A website or product to build?</h2>
+        <p>Let's discuss your goals, your constraints and the best architecture to reach your target Core Web Vitals.</p>
+        <a class="btn btn-light" href="index.html#contact">Schedule a discussion ↗</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div>
+      <strong class="footer-brand">Nexora</strong> · Strategy, design &amp; technology · Lille, France
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#services">Services</a>
+      <a href="sites-web-produits.html">Websites &amp; digital products</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Back-to-top button (global styles in theme.css §14) -->
+<button id="scrollToTopBtn" aria-label="Back to top of page" title="Back to top">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M18 15l-6-6-6 6"/>
+  </svg>
+</button>
+
+<script src="../js/site.js" defer></script>
+</body>
+</html>

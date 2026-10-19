@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="de" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Künstliche Intelligenz — Nexora | Digitale Agentur Lille</title>
+<meta name="description" content="Maßgeschneiderte KI-Lösungen: LLM-Integration, autonome Agenten, RAG-Architekturen und souveräne Automatisierung Ihrer Geschäftsprozesse.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="theme-color" content="#08111f">
+<meta name="author" content="Nexora">
+<!-- LOKALER MODUS (file:// oder http://localhost) — die Domain nexora.fr ist noch nicht registriert.
+     Die folgenden Tags (canonical, hreflang) erfordern absolute URLs: sie sind
+     hier deaktiviert und werden in Produktion unverändert reaktiviert,
+     mit https://nexora.fr als Origin.
+<link rel="canonical" href="https://nexora.fr/de/intelligence-artificielle.html">
+<link rel="alternate" hreflang="fr" href="https://nexora.fr/intelligence-artificielle.html">
+<link rel="alternate" hreflang="en" href="https://nexora.fr/en/intelligence-artificielle.html">
+<link rel="alternate" hreflang="de" href="https://nexora.fr/de/intelligence-artificielle.html">
+<link rel="alternate" hreflang="x-default" href="https://nexora.fr/intelligence-artificielle.html">
+-->
+
+<!-- Assets zeigen auf die Website-Wurzel (theme.css, Favicons liegen im Root) -->
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+
+<!-- Open Graph / Social (relative URLs im lokalen Modus,
+     in Produktion zurück auf absolute https://nexora.fr/…-URLs umstellen) -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_DE">
+<meta property="og:site_name" content="Nexora">
+<meta property="og:title" content="Künstliche Intelligenz — Nexora">
+<meta property="og:description" content="Maßgeschneiderte KI-Agenten, RAG-Architekturen und Automatisierung von Geschäftsworkflows unter strikter Wahrung der Vertraulichkeit Ihrer Daten.">
+<meta property="og:url" content="../intelligence-artificielle.html">
+<meta property="og:image" content="../og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Nexora — Künstliche Intelligenz, KI-Agenten und RAG-Architekturen">
+
+<!-- Sicherheit (X-Content-Type-Options & frame-ancestors: als HTTP-Header serverseitig konfigurieren) -->
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'">
+
+<!-- Gemeinsames Stylesheet -->
+<link rel="stylesheet" href="../theme.css">
+
+<!-- Strukturierte Daten: Service + FAQPage
+     ⚠️ LOKALER MODUS: JSON-LD ist deaktiviert (Schema.org-@id-Werte erfordern
+     stabile absolute URLs). In Produktion unverändert reaktivieren, sobald
+     die Domain nexora.fr registriert ist.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://nexora.fr/de/intelligence-artificielle.html#service",
+      "name": "KI-Lösungen & Integration",
+      "provider": {
+        "@id": "https://nexora.fr/#organization"
+      },
+      "serviceType": "Artificial Intelligence Consulting & Engineering",
+      "description": "Entwicklung von KI-Anwendungen, sichere Business-Assistenten, RAG und Modell-Finetuning für Unternehmen.",
+      "areaServed": "France",
+      "inLanguage": "de",
+      "mainEntityOfPage": { "@id": "https://nexora.fr/de/intelligence-artificielle.html" }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://nexora.fr/de/intelligence-artificielle.html#faq",
+      "inLanguage": "de",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Werden unsere Daten zum Training öffentlicher Modelle verwendet?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nein, das hat für uns absolute Priorität. Wir nutzen Unternehmens-APIs mit garantierter Vertraulichkeit oder betreiben Open-Source-Modelle auf Ihren eigenen Servern."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wie lange dauert die Bereitstellung eines ersten POC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In der Regel ist ein funktionsfähiger Proof of Concept (POC) in 2 bis 4 Wochen einsatzbereit, um die technische Machbarkeit und den unternehmerischen ROI vor einem flächendeckenden Rollout zu validieren."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wie vermeiden Sie Halluzinationen von Sprachmodellen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dank RAG-Architekturen: Die KI antwortet ausschließlich auf Basis der bereitgestellten Referenzdokumente und zitiert stets die Quelle ihrer Information."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Begleiten Sie den Wandel und die Einführung?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja, wir schulen Ihre operativen Teams direkt im Prompt Engineering und in den bewährten Praktiken für den Umgang mit ihren neuen Werkzeugen."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+-->
+
+<style>
+/* Seitenspezifische Styles der KI-Seite
+   (#scrollToTopBtn ist global in theme.css §14) */
+
+/* Terminal / RAG */
+.terminal-window {
+  background: #030712;
+  border: 1px solid rgba(255, 255, 255, .12);
+  border-radius: 16px;
+  padding: 24px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 13px;
+  margin-top: 24px;
+  line-height: 1.8;
+}
+
+.term-line {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.term-tag {
+  background: rgba(157, 140, 255, .2);
+  color: var(--violet);
+  padding: 1px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.term-text { color: #d1d5db; }
+.term-highlight { color: var(--cyan); }
+
+/* Kleine lokale Hilfsklassen (ersetzen die entfernten Inline-Styles) */
+.kicker-violet { color: var(--violet); }
+.h2-white { color: var(--white); }
+.lead-muted { color: #a3b3c7; max-width: 680px; }
+.security-card-main h3 { margin: 0 0 10px; font-size: 22px; }
+.security-card-main p { margin: 0; color: #a3b3c7; font-size: 14px; }
+.security-card-badge { text-align: right; }
+.badge-violet {
+  background: rgba(157, 140, 255, .2);
+  color: var(--violet);
+  border: 1px solid rgba(157, 140, 255, .4);
+}
+.section-light {
+  background: var(--white);
+  border-top: 1px solid var(--line);
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Zum Inhalt springen</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="nav">
+      <a class="brand" href="index.html" aria-label="Nexora — Zur Startseite">
+        <img src="../favicon.png" alt="Nexora" class="brand-icon" width="28" height="28" loading="eager">
+        Nexora
+      </a>
+      <nav class="nav-links" id="navLinks" aria-label="Hauptnavigation">
+        <a href="index.html#services">Leistungen</a>
+        <a href="index.html#expertise">Expertise</a>
+        <a href="index.html#methode">Methode</a>
+        <a href="index.html#equipe">Team</a>
+        <a href="index.html#realisations">Referenzen</a>
+        <a href="index.html#contact">Kontakt</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="nav-cta" href="index.html#contact">KI-Anwendungsfall bewerten ↗</a>
+
+        <!-- Sprachumschalter: ohne JavaScript (details/summary).
+             LOKALER MODUS: relative Links zur jeweiligen Seite in jeder Sprache;
+             in Produktion zurück auf absolute https://nexora.fr/…-URLs
+             mit querverknüpften hreflang umstellen. -->
+        <details class="lang-switch">
+          <summary aria-label="Sprache wählen">DE ▾</summary>
+          <ul class="lang-menu">
+            <li><a href="../intelligence-artificielle.html" lang="fr">Français</a></li>
+            <li><a href="../en/intelligence-artificielle.html" lang="en">English</a></li>
+            <li><a href="intelligence-artificielle.html" lang="de" aria-current="true">Deutsch</a></li>
+          </ul>
+        </details>
+
+        <button class="menu" type="button" id="menuBtn" aria-label="Menü öffnen" aria-expanded="false" aria-controls="navLinks">☰</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <!-- Hero -->
+  <section class="page-hero accent-violet">
+    <div class="wrap">
+      <nav class="breadcrumb" aria-label="Brotkrumennavigation">
+        <a href="index.html" title="Zur Startseite zurückkehren">Startseite</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <a href="index.html#services" title="Alle Leistungen ansehen">Leistungen</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <span class="current" aria-current="page">Künstliche Intelligenz</span>
+      </nav>
+
+      <div class="kicker">AGENTEN, RAG &amp; DATA ENGINEERING</div>
+      <h1>Künstliche Intelligenz im Kern Ihrer Geschäftsprozesse.</h1>
+      <p class="page-hero-lead">Fernab von Moden und Gadgets entwickeln wir nützliche, sichere und souveräne KI-Architekturen, die Ihre Abläufe automatisieren und die Produktivität Ihrer Teams vervielfachen.</p>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <b>100 %</b>
+          <span>DSGVO-Konformität &amp; souveränes Hosting</span>
+        </div>
+        <div class="stat-item">
+          <b>Maßgeschneidertes RAG</b>
+          <span>Echtzeitanalyse Ihrer Dokumentenbestände</span>
+        </div>
+        <div class="stat-item">
+          <b>0 Lecks</b>
+          <span>Isolierte Modelle ohne öffentliches Nachtraining</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RAG-Architektur -->
+  <section class="wrap">
+    <div class="architecture-section">
+      <div class="kicker kicker-violet">TECHNISCHE BEREITSTELLUNG</div>
+      <h2 class="h2-white">RAG-Architektur (Retrieval-Augmented Generation)</h2>
+      <p class="lead-muted">Wir verbinden Sprachmodelle mit dem lebendigen Gedächtnis Ihres Unternehmens (ERP, DMS, Datenbanken), ohne Ihre sensiblen Daten jemals nach außen zu exponieren.</p>
+
+      <div class="terminal-window">
+        <div class="term-line">
+          <span class="term-tag">01. INGESTION</span>
+          <span class="term-text">Sichere Vektorisierung Ihrer vertraulichen Dokumente (PDF, APIs, SQL).</span>
+        </div>
+        <div class="term-line">
+          <span class="term-tag">02. RETRIEVAL</span>
+          <span class="term-text">Hochpräzise semantische Suche in <span class="term-highlight">VectorDB (pgvector / Qdrant)</span>.</span>
+        </div>
+        <div class="term-line">
+          <span class="term-tag">03. SYNTHÈSE</span>
+          <span class="term-text">Erzeugung verlässlicher Antworten mit überprüfbaren Quellen und Zitaten durch den KI-Agenten.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Anwendungsfälle -->
+  <section class="section">
+    <div class="wrap">
+      <div class="kicker">KONKRETE ANWENDUNGEN</div>
+      <h2>Wo stiftet KI echten Mehrwert?</h2>
+
+      <div class="usecases-grid">
+        <article class="usecase-card">
+          <div>
+            <h3>Intelligente Business-Assistenten</h3>
+            <p>Geben Sie Ihren Mitarbeitern einen Copiloten, der sämtliche internen Wissensbasen augenblicklich abfragen kann.</p>
+          </div>
+          <span class="badge">Operative Zeitersparnis</span>
+        </article>
+        <article class="usecase-card">
+          <div>
+            <h3>Dokumenten- &amp; Aktensverarbeitung</h3>
+            <p>Automatische Extraktion strukturierter Daten aus Rechnungen, Verträgen oder komplexen Berichten mit kontrollierter Genauigkeit.</p>
+          </div>
+          <span class="badge">Automatisierung &amp; null Fehler</span>
+        </article>
+        <article class="usecase-card">
+          <div>
+            <h3>B2B-Konversationsagenten</h3>
+            <p>Kundendienst-Agenten, die Anfragen qualifizieren, vorläufige Angebote erstellen und Daten direkt in Ihr CRM synchronisieren.</p>
+          </div>
+          <span class="badge">Conversion &amp; 24/7-Support</span>
+        </article>
+      </div>
+
+      <div class="security-card">
+        <div class="security-card-main">
+          <h3>Datensicherheit &amp; Souveränität</h3>
+          <p>Ihre Gesundheits-, Finanz- oder Strategiedaten bleiben ausschließlich auf gesicherten Infrastrukturen in Frankreich oder Europa (Mistral AI, SecNumCloud-Hosting).</p>
+        </div>
+        <div class="security-card-badge">
+          <span class="badge badge-violet">DSGVO &amp; ISO 27001 ready</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-light">
+    <div class="wrap">
+      <div class="kicker">HÄUFIG GESTELLTE FRAGEN</div>
+      <h2>Alles zur Integration von KI im Unternehmen.</h2>
+
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3>Werden unsere Daten zum Training öffentlicher Modelle verwendet?</h3>
+          <p>Nein, das hat für uns absolute Priorität. Wir nutzen Unternehmens-APIs mit garantierter Vertraulichkeit oder betreiben Open-Source-Modelle auf Ihren eigenen Servern.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Wie lange dauert die Bereitstellung eines ersten POC?</h3>
+          <p>In der Regel ist ein funktionsfähiger Proof of Concept (POC) in 2 bis 4 Wochen einsatzbereit, um die technische Machbarkeit und den unternehmerischen ROI vor einem flächendeckenden Rollout zu validieren.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Wie vermeiden Sie Halluzinationen von Sprachmodellen?</h3>
+          <p>Dank RAG-Architekturen: Die KI antwortet ausschließlich auf Basis der bereitgestellten Referenzdokumente und zitiert stets die Quelle ihrer Information.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Begleiten Sie den Wandel und die Einführung?</h3>
+          <p>Ja, wir schulen Ihre operativen Teams direkt im Prompt Engineering und in den bewährten Praktiken für den Umgang mit ihren neuen Werkzeugen.</p>
+        </div>
+      </div>
+
+      <div class="cta-box">
+        <h2>Ein Projekt oder eine KI-Automatisierungsidee?</h2>
+        <p>Prüfen wir gemeinsam die technische Machbarkeit und die wirtschaftliche Auswirkungen für Ihr Unternehmen.</p>
+        <a class="btn btn-light" href="index.html#contact">Technischen Austausch vereinbaren ↗</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div>
+      <strong class="footer-brand">Nexora</strong> · Strategie, Design &amp; Technologie · Lille, Frankreich
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Startseite</a>
+      <a href="index.html#services">Leistungen</a>
+      <a href="intelligence-artificielle.html">Künstliche Intelligenz</a>
+      <a href="index.html#contact">Kontakt</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Zurück-nach-oben-Button (globale Styles in theme.css §14) -->
+<button id="scrollToTopBtn" aria-label="Zum Seitenanfang zurückkehren" title="Nach oben">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M18 15l-6-6-6 6"/>
+  </svg>
+</button>
+
+<script src="../js/site.js" defer></script>
+</body>
+</html>

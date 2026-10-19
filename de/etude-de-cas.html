@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="de" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fallstudie: Neubau &amp; Performance für Northline — Nexora Lille</title>
+<meta name="description" content="Wie Nexora die Geschwindigkeit, Barrierefreiheit und Conversion-Rate von Northline mit einer maßgeschneiderten, frameworkfreien Web-Architektur optimiert hat.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="theme-color" content="#08111f">
+<meta name="author" content="Nexora">
+<!-- LOKALER MODUS (file:// oder http://localhost) — die Domain nexora.fr ist noch nicht registriert.
+     Die folgenden Tags (canonical, hreflang) erfordern absolute URLs: sie sind
+     hier deaktiviert und werden in Produktion unverändert reaktiviert,
+     mit https://nexora.fr als Origin.
+<link rel="canonical" href="https://nexora.fr/de/etude-de-cas.html">
+<link rel="alternate" hreflang="fr" href="https://nexora.fr/etude-de-cas.html">
+<link rel="alternate" hreflang="en" href="https://nexora.fr/en/etude-de-cas.html">
+<link rel="alternate" hreflang="de" href="https://nexora.fr/de/etude-de-cas.html">
+<link rel="alternate" hreflang="x-default" href="https://nexora.fr/etude-de-cas.html">
+-->
+
+<!-- Assets zeigen auf die Website-Wurzel (theme.css, Favicons liegen im Root) -->
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+
+<!-- Open Graph / Social (relative URLs im lokalen Modus,
+     in Produktion zurück auf absolute https://nexora.fr/…-URLs umstellen) -->
+<meta property="og:type" content="article">
+<meta property="og:locale" content="de_DE">
+<meta property="og:site_name" content="Nexora">
+<meta property="og:title" content="Fallstudie: Neubau &amp; Performance für Northline — Nexora">
+<meta property="og:description" content="+140 % Conversion und ein Core-Web-Vitals-Score von 100/100. Vollständige Analyse der Lösung.">
+<meta property="og:url" content="../etude-de-cas.html">
+<meta property="og:image" content="../og-case-study.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Nexora — Northline-Fallstudie: performanter Neubau">
+
+<!-- Sicherheit (X-Content-Type-Options & frame-ancestors: als HTTP-Header serverseitig konfigurieren) -->
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'">
+
+<!-- Gemeinsames Stylesheet -->
+<link rel="stylesheet" href="../theme.css">
+
+<!-- Schema.org: Article + BreadcrumbList
+     ⚠️ LOKALER MODUS: JSON-LD ist deaktiviert (Schema.org-@id-Werte erfordern
+     stabile absolute URLs). In Produktion unverändert reaktivieren, sobald
+     die Domain nexora.fr registriert ist.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://nexora.fr/de/etude-de-cas.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Startseite",
+          "item": "https://nexora.fr/de/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Referenzen",
+          "item": "https://nexora.fr/de/index.html#realisations"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Northline-Kundenfall",
+          "item": "https://nexora.fr/de/etude-de-cas.html"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://nexora.fr/de/etude-de-cas.html#article",
+      "headline": "Ultraschneller Neubau und SEO/GEO-Optimierung für Northline",
+      "description": "Detaillierte Fallstudie zur technischen Modernisierung und Performance-Steigerung der Northline-Plattform.",
+      "author": { "@id": "https://nexora.fr/#organization" },
+      "publisher": { "@id": "https://nexora.fr/#organization" },
+      "inLanguage": "de",
+      "datePublished": "2026-09-15",
+      "dateModified": "2026-10-16",
+      "about": {
+        "@type": "Organization",
+        "name": "Northline"
+      },
+      "mainEntityOfPage": { "@id": "https://nexora.fr/de/etude-de-cas.html" }
+    }
+  ]
+}
+</script>
+-->
+</head>
+<body>
+
+<a class="skip" href="#main">Zum Inhalt springen</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="nav">
+      <a class="brand" href="index.html" aria-label="Nexora — Zur Startseite">
+        <img src="../favicon.png" alt="Nexora" class="brand-icon" width="28" height="28" loading="eager">
+        Nexora
+      </a>
+      <nav class="nav-links" id="navLinks" aria-label="Hauptnavigation">
+        <a href="index.html#services">Leistungen</a>
+        <a href="index.html#expertise">Expertise</a>
+        <a href="index.html#methode">Methode</a>
+        <a href="index.html#equipe">Team</a>
+        <a href="index.html#realisations">Referenzen</a>
+        <a href="index.html#contact">Kontakt</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="nav-cta" href="index.html#contact">Ähnliches Projekt? ↗</a>
+
+        <!-- Sprachumschalter: ohne JavaScript (details/summary).
+             LOKALER MODUS: relative Links zur jeweiligen Seite in jeder Sprache;
+             in Produktion zurück auf absolute https://nexora.fr/…-URLs
+             mit querverknüpften hreflang umstellen. -->
+        <details class="lang-switch">
+          <summary aria-label="Sprache wählen">DE ▾</summary>
+          <ul class="lang-menu">
+            <li><a href="../etude-de-cas.html" lang="fr">Français</a></li>
+            <li><a href="../en/etude-de-cas.html" lang="en">English</a></li>
+            <li><a href="etude-de-cas.html" lang="de" aria-current="true">Deutsch</a></li>
+          </ul>
+        </details>
+
+        <button class="menu" type="button" id="menuBtn" aria-label="Menü öffnen" aria-expanded="false" aria-controls="navLinks">☰</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <!-- Hero -->
+  <section class="page-hero accent-emerald">
+    <div class="wrap">
+      <nav class="breadcrumb" aria-label="Brotkrumennavigation">
+        <a href="index.html" title="Zur Startseite zurückkehren">Startseite</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <a href="index.html#realisations" title="Alle Referenzen ansehen">Referenzen</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <span class="current" aria-current="page">Northline</span>
+      </nav>
+
+      <div class="kicker">Fallstudie · E-Commerce &amp; SaaS</div>
+      <h1>Performanter Neubau für Northline</h1>
+      <p class="page-hero-lead">Wie wir die technische Altlast beseitigt, die Ladezeit viertelt und die Conversion-Rate in 90 Tagen um 140 % gesteigert haben.</p>
+
+      <div class="kpi-banner">
+        <div class="kpi-card">
+          <span class="val">+140 %</span>
+          <span class="lbl">Gesamte Conversion-Rate</span>
+        </div>
+        <div class="kpi-card">
+          <span class="val">0,4 s</span>
+          <span class="lbl">LCP-Ladezeit</span>
+        </div>
+        <div class="kpi-card">
+          <span class="val">100/100</span>
+          <span class="lbl">Google-PageSpeed-Score</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Inhalt + Sidebar -->
+  <div class="wrap content-layout">
+    <article class="main-content">
+      <h2>1. Die Ausgangslage</h2>
+      <p>Northline betrieb eine veraltete Website auf Basis eines schwergewichtigen CMS mit zahlreichen überflüssigen Plugins. Das Ergebnis: Ladezeiten von über 4,2 Sekunden auf Mobilgeräten, eine hohe Absprungrate (68 %) und eine schwache Sichtbarkeit in Suchmaschinen.</p>
+      <p>Das Ziel war klar: die User Experience von Grund auf neu aufzubauen, mit einer Strategie, die auf reine Geschwindigkeit, klare Botschaften und Optimierung für KI-Anfragen setzte.</p>
+
+      <h2>2. Die technische Nexora-Lösung</h2>
+      <p>Wir wählten einen radikalen Ansatz: keine schweren Client-Frameworks, semantisches HTML5, modernes CSS und minimalistisches JavaScript, das asynchron ausgeführt wird.</p>
+      <ul>
+        <li><strong>Native Web-Architektur:</strong> Struktur ohne unnötigen Code, wodurch das Seitengewicht von 3,2 MB auf unter 180 KB sank.</li>
+        <li><strong>Semantisches Markup &amp; Schema.org:</strong> Vollständige Integration strukturierter Daten, um die Präsenz in Google-Snippets und KI-Antworten (GEO) zu maximieren.</li>
+        <li><strong>Serverless-Infrastruktur:</strong> Edge-Deployment mit Server-Antwortzeiten (TTFB) unter 50 ms.</li>
+      </ul>
+
+      <div class="quote-card">
+        <blockquote>„Der Einsatz von Nexora hat unsere Online-Präsenz verwandelt. Die Website lädt blitzschnell und unsere Anfragen haben sich in zwei Monaten mehr als verdoppelt.“</blockquote>
+        <cite>— Marketingleitung, Northline</cite>
+      </div>
+
+      <h2>3. Messbare Ergebnisse</h2>
+      <p>Drei Monate nach dem Launch der neuen Version bestätigen die Analysen die Wirkung des technischen Neubaus auf das Geschäft:</p>
+      <ul>
+        <li><strong>Conversion:</strong> Steigerung qualifizierter Kontaktanfragen um 140 %.</li>
+        <li><strong>SEO &amp; GEO:</strong> Platzierungen auf Seite 1 bei 12 strategischen Keywords und häufige Zitierung durch KI-Suchmaschinen.</li>
+        <li><strong>Ressourcen:</strong> CO₂-Fußabdruck der Server um 75 % reduziert.</li>
+      </ul>
+    </article>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="side-card">
+        <h3>Projektblatt</h3>
+        <ul class="meta-list">
+          <li><span class="lbl">Kunde</span> <span class="val">Northline</span></li>
+          <li><span class="lbl">Branche</span> <span class="val">B2B / Technologie</span></li>
+          <li><span class="lbl">Dauer</span> <span class="val">4 Wochen</span></li>
+          <li><span class="lbl">Stack</span> <span class="val">HTML5, CSS, Edge</span></li>
+        </ul>
+        <a class="btn-full" href="index.html#contact">Projekt starten ↗</a>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div>
+      <strong class="footer-brand">Nexora</strong> · Strategie, Design &amp; Technologie · Lille, Frankreich
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Startseite</a>
+      <a href="index.html#services">Leistungen</a>
+      <a href="etude-de-cas.html">Northline-Fallstudie</a>
+      <a href="index.html#contact">Kontakt</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Zurück-nach-oben-Button (globale Styles in theme.css §14) -->
+<button id="scrollToTopBtn" aria-label="Zum Seitenanfang zurückkehren" title="Nach oben">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M18 15l-6-6-6 6"/>
+  </svg>
+</button>
+
+<script src="../js/site.js" defer></script>
+</body>
+</html>

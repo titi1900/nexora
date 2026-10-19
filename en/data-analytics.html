@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Data &amp; Analytics — Nexora | Digital agency in Lille</title>
+<meta name="description" content="Turn raw data into decision levers. ETL pipelines, Modern Data Stack, custom BI dashboards and data governance for your business.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="theme-color" content="#08111f">
+<meta name="author" content="Nexora">
+<!-- LOCAL MODE (file:// or http://localhost) — the nexora.fr domain is not acquired yet.
+     The tags below (canonical, hreflang) require absolute URLs: they are
+     disabled here and will be re-enabled as-is in production, with
+     https://nexora.fr as the origin.
+<link rel="canonical" href="https://nexora.fr/en/data-analytics.html">
+<link rel="alternate" hreflang="fr" href="https://nexora.fr/data-analytics.html">
+<link rel="alternate" hreflang="en" href="https://nexora.fr/en/data-analytics.html">
+<link rel="alternate" hreflang="de" href="https://nexora.fr/de/data-analytics.html">
+<link rel="alternate" hreflang="x-default" href="https://nexora.fr/data-analytics.html">
+-->
+
+<!-- Assets point to the site root (theme.css, favicons live at the root) -->
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+
+<!-- Open Graph / Social (relative URLs in local mode,
+     switch back to absolute https://nexora.fr/… in production) -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Nexora">
+<meta property="og:title" content="Data &amp; Analytics — Nexora">
+<meta property="og:description" content="Turn your raw data into decision levers. ETL pipelines, Modern Data Stack, custom BI dashboards and data governance.">
+<meta property="og:url" content="../data-analytics.html">
+<meta property="og:image" content="../og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Nexora — Data engineering and analytics">
+
+<!-- Security (X-Content-Type-Options & frame-ancestors: configure as HTTP headers on the server) -->
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'">
+
+<!-- Shared stylesheet -->
+<link rel="stylesheet" href="../theme.css">
+
+<!-- Schema.org: Service + BreadcrumbList + FAQPage
+     ⚠️ LOCAL MODE: JSON-LD is disabled (Schema.org @id values require
+     stable absolute URLs). Re-enable as-is in production once the
+     nexora.fr domain is acquired.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://nexora.fr/en/data-analytics.html#service",
+      "name": "Data & Analytics",
+      "provider": {
+        "@id": "https://nexora.fr/#organization"
+      },
+      "serviceType": "Data Engineering & Business Intelligence",
+      "description": "Modern data architectures, ETL pipelines, Business Intelligence and GDPR-compliant data governance.",
+      "areaServed": "France"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://nexora.fr/en/data-analytics.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://nexora.fr/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://nexora.fr/index.html#services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Data & Analytics",
+          "item": "https://nexora.fr/en/data-analytics.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://nexora.fr/en/data-analytics.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do you handle heterogeneous data sources?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We develop API connectors and custom connectors to handle SQL databases, NoSQL streams, flat files and SaaS APIs alike."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you work with our existing BI tools?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. We adapt to your technical ecosystem (PowerBI, Tableau, Looker Studio, Metabase, Grafana) or advise you on the best alternative."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take to set up a Data Warehouse?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A first functional foundation integrating your main data sources can be deployed in 3 to 6 weeks."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you guarantee the quality of collected data?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We integrate automated data integrity and freshness tests at every stage of the ingestion pipeline."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+-->
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="nav">
+      <a class="brand" href="index.html" aria-label="Nexora — Home">
+        <img src="../favicon.png" alt="Nexora" class="brand-icon" width="28" height="28" loading="eager">
+        Nexora
+      </a>
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="index.html#services">Services</a>
+        <a href="index.html#expertise">Expertise</a>
+        <a href="index.html#methode">Method</a>
+        <a href="index.html#equipe">Team</a>
+        <a href="index.html#realisations">Work</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="nav-cta" href="index.html#contact">Audit your data ↗</a>
+
+        <!-- Language switch: zero JS (details/summary).
+             LOCAL MODE: relative links to the matching page in each language;
+             in production, switch back to absolute https://nexora.fr/…
+             URLs with cross-linked hreflang. -->
+        <details class="lang-switch">
+          <summary aria-label="Choose language">EN ▾</summary>
+          <ul class="lang-menu">
+            <li><a href="../data-analytics.html" lang="fr">Français</a></li>
+            <li><a href="data-analytics.html" lang="en" aria-current="true">English</a></li>
+            <li><a href="../de/data-analytics.html" lang="de">Deutsch</a></li>
+          </ul>
+        </details>
+
+        <button class="menu" type="button" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">☰</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <!-- Hero -->
+  <section class="page-hero accent-emerald">
+    <div class="wrap">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html" title="Back to the home page">Home</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <a href="index.html#services" title="See all services">Services</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <span class="current" aria-current="page">Data &amp; Analytics</span>
+      </nav>
+
+      <div class="kicker">DATA ENGINEERING &amp; DECISION SUPPORT</div>
+      <h1>Turn your data streams into strategic decision levers.</h1>
+      <p class="page-hero-lead">From information silos to a 360° view: we design scalable, secure and compliant data architectures to shed light on your company's day-to-day management.</p>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <b>Real time</b>
+          <span>Synchronized and automated pipelines</span>
+        </div>
+        <div class="stat-item">
+          <b>Single source</b>
+          <span>Reliable centralization, no duplicates</span>
+        </div>
+        <div class="stat-item">
+          <b>Compliant</b>
+          <span>Strict governance and GDPR compliance</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modern Data Pipeline -->
+  <section class="wrap">
+    <div class="pipeline-section">
+      <div class="kicker kicker-emerald">MODERN DATA STACK</div>
+      <h2>Your data architecture, step by step</h2>
+      <p class="roadmap-lead">A complete value chain to guarantee the quality, accessibility and reliability of your business metrics.</p>
+
+      <div class="pipeline-flow">
+        <div class="pipeline-box">
+          <h3>01. Ingestion</h3>
+          <p>Automated collection from your ERPs, CRMs, application databases and third-party APIs.</p>
+        </div>
+        <div class="pipeline-box">
+          <h3>02. Storage</h3>
+          <p>Centralization in a modern Data Warehouse (Snowflake, BigQuery, PostgreSQL).</p>
+        </div>
+        <div class="pipeline-box">
+          <h3>03. Modeling</h3>
+          <p>Transformation, cleaning and structuring of business data (dbt / SQL).</p>
+        </div>
+        <div class="pipeline-box">
+          <h3>04. Delivery</h3>
+          <p>Interactive dashboards (Looker, PowerBI, Metabase) and AI feeds.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Domains of expertise -->
+  <section class="section">
+    <div class="wrap">
+      <div class="kicker">OUR EXPERTISE</div>
+      <h2>Custom Data solutions.</h2>
+
+      <div class="data-grid">
+        <article class="data-card">
+          <div>
+            <h3>Data Warehousing &amp; ETL</h3>
+            <p>Design of resilient extraction and loading pipelines to consolidate all your data sources in a single place.</p>
+          </div>
+          <span class="badge">Scalable infrastructures</span>
+        </article>
+        <article class="data-card">
+          <div>
+            <h3>Business Intelligence &amp; KPIs</h3>
+            <p>Ergonomic, action-oriented dashboards that give your decision-makers exact, real-time visibility.</p>
+          </div>
+          <span class="badge">Custom visualization</span>
+        </article>
+        <article class="data-card">
+          <div>
+            <h3>Predictive Analysis &amp; Analytics</h3>
+            <p>Leveraging historical data to anticipate customer churn, optimize your inventory or detect network anomalies.</p>
+          </div>
+          <span class="badge">Applied Machine Learning</span>
+        </article>
+      </div>
+
+      <div class="gov-card">
+        <div>
+          <h3 class="gov-card-title">Data Governance &amp; Security</h3>
+          <p class="gov-card-text">Implementation of access management policies (RBAC), anonymization and traceability to guarantee full regulatory compliance.</p>
+        </div>
+        <div class="gov-card-badge">
+          <span class="badge badge-tinted badge-tinted-emerald">GDPR compliance</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-light">
+    <div class="wrap">
+      <div class="kicker">FREQUENTLY ASKED QUESTIONS</div>
+      <h2>Clarity and transparency on your Data projects.</h2>
+
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3>How do you handle heterogeneous data sources?</h3>
+          <p>We develop API connectors and custom connectors to handle SQL databases, NoSQL streams, flat files and SaaS APIs alike.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can you work with our existing BI tools?</h3>
+          <p>Absolutely. We adapt to your technical ecosystem (PowerBI, Tableau, Looker Studio, Metabase, Grafana) or advise you on the best alternative.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How long does it take to set up a Data Warehouse?</h3>
+          <p>A first functional foundation integrating your main data sources can be deployed in 3 to 6 weeks.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How do you guarantee the quality of collected data?</h3>
+          <p>We integrate automated data integrity and freshness tests at every stage of the ingestion pipeline.</p>
+        </div>
+      </div>
+
+      <div class="cta-box">
+        <h2>Need to streamline your data?</h2>
+        <p>Let's discuss your data structure and your organization's decision-making goals.</p>
+        <a class="btn btn-light" href="index.html#contact">Schedule a Data conversation ↗</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div>
+      <strong class="footer-brand">Nexora</strong> · Strategy, design &amp; technology · Lille, France
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#services">Services</a>
+      <a href="data-analytics.html">Data &amp; Analytics</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Back-to-top button (global styles in theme.css §14) -->
+<button id="scrollToTopBtn" aria-label="Back to top of page" title="Back to top">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M18 15l-6-6-6 6"/>
+  </svg>
+</button>
+
+<script src="../js/site.js" defer></script>
+</body>
+</html>

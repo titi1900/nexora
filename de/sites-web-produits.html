@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="de" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Websites &amp; digitale Produkte — Nexora | Digitale Agentur Lille</title>
+<meta name="description" content="Ultraschnelle Websites und digitale Produkte: semantisches HTML, natives CSS, Core Web Vitals 100/100, WCAG-Barrierefreiheit und skalierbare Architektur.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="theme-color" content="#08111f">
+<meta name="author" content="Nexora">
+<!-- LOKALER MODUS (file:// oder http://localhost) — die Domain nexora.fr ist noch nicht registriert.
+     Die folgenden Tags (canonical, hreflang) erfordern absolute URLs: sie sind
+     hier deaktiviert und werden in Produktion unverändert reaktiviert,
+     mit https://nexora.fr als Origin.
+<link rel="canonical" href="https://nexora.fr/de/sites-web-produits.html">
+<link rel="alternate" hreflang="fr" href="https://nexora.fr/sites-web-produits.html">
+<link rel="alternate" hreflang="en" href="https://nexora.fr/en/sites-web-produits.html">
+<link rel="alternate" hreflang="de" href="https://nexora.fr/de/sites-web-produits.html">
+<link rel="alternate" hreflang="x-default" href="https://nexora.fr/sites-web-produits.html">
+-->
+
+<!-- Assets zeigen auf die Website-Wurzel (theme.css, Favicons liegen im Root) -->
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+
+<!-- Open Graph / Social (relative URLs im lokalen Modus,
+     in Produktion zurück auf absolute https://nexora.fr/…-URLs umstellen) -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_DE">
+<meta property="og:site_name" content="Nexora">
+<meta property="og:title" content="Websites &amp; digitale Produkte — Nexora">
+<meta property="og:description" content="Schnelle, barrierefreie und nachhaltige Websites und digitale Produkte. Keine überflüssigen Frameworks, hervorragende Core Web Vitals.">
+<meta property="og:url" content="../sites-web-produits.html">
+<meta property="og:image" content="../og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Nexora — Hochleistungs-Websites und digitale Produkte">
+
+<!-- Sicherheit (X-Content-Type-Options & frame-ancestors: als HTTP-Header serverseitig konfigurieren) -->
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'">
+
+<!-- Gemeinsames Stylesheet -->
+<link rel="stylesheet" href="../theme.css">
+
+<!-- Strukturierte Daten: Service + FAQPage
+     ⚠️ LOKALER MODUS: JSON-LD ist deaktiviert (Schema.org-@id-Werte erfordern
+     stabile absolute URLs). In Produktion unverändert reaktivieren, sobald
+     die Domain nexora.fr registriert ist.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://nexora.fr/de/sites-web-produits.html#service",
+      "name": "Websites & digitale Produkte",
+      "provider": {
+        "@id": "https://nexora.fr/#organization"
+      },
+      "serviceType": "Web Design & Front-end Development",
+      "description": "Hochleistungs-Websites und digitale Produkte: semantisches HTML, natives CSS, WCAG-Barrierefreiheit, Core Web Vitals und skalierbare Architektur.",
+      "areaServed": "France",
+      "inLanguage": "de",
+      "mainEntityOfPage": { "@id": "https://nexora.fr/de/sites-web-produits.html" }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://nexora.fr/de/sites-web-produits.html#faq",
+      "inLanguage": "de",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Arbeiten Sie mit Frameworks (React, Vue, Next…)?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nur wenn die Komplexität des Produkts es tatsächlich rechtfertigt. In den meisten Fällen genügen semantisches HTML + modernes CSS + etwas JS — mit deutlich besseren Leistungen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wie lange dauert eine Unternehmens-Website?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Eine gut abgegrenzte Website mit 5 bis 10 Seiten kann in 3 bis 6 Wochen geliefert werden, inklusive Audits und Tests."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Übernehmen Sie Hosting und Deployment?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja. Wir richten schnelles Edge-/Serverless-Hosting, Sicherheits-Header (CSP etc.) und alle erforderlichen Weiterleitungen ein."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wird die Website barrierefrei sein (WCAG)?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja. Kontraste, Tastaturnavigation, ARIA-Attribute und semantische Struktur werden von Anfang an in der Konzeption integriert — nicht nachträglich angehängt."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+-->
+
+<style>
+/* Seitenspezifische Styles der Websites-und-Produkte-Seite
+   (#scrollToTopBtn ist global in theme.css §14) */
+
+/* Prozessschritte (spezifisch) */
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 30px;
+}
+
+.process-box {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: var(--r-sm);
+  padding: 20px;
+}
+
+.process-box h3 {
+  font-size: 15px;
+  color: var(--cyan);
+  margin: 0 0 8px;
+}
+
+.process-box p {
+  font-size: 12px;
+  color: #a3b3c7;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Kleine lokale Hilfsklassen (ersetzen die entfernten Inline-Styles) */
+.kicker-cyan { color: var(--cyan); }
+.h2-white { color: var(--white); }
+.lead-dim { color: #a3b3c7; max-width: 650px; margin: 0; }
+.gov-card-cyan { border-color: rgba(104, 216, 255, 0.2); }
+.gov-card-main h3 { margin: 0 0 10px; font-size: 22px; color: var(--white); }
+.gov-card-main p { margin: 0; color: #a3b3c7; font-size: 14px; }
+.gov-card-badge { text-align: right; }
+.badge-cyan {
+  background: rgba(104, 216, 255, .2);
+  color: var(--cyan);
+  border: 1px solid rgba(104, 216, 255, .4);
+}
+.section-light {
+  background: var(--white);
+  border-top: 1px solid var(--line);
+}
+
+@media (max-width: 900px) {
+  .process-steps {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Zum Inhalt springen</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="nav">
+      <a class="brand" href="index.html" aria-label="Nexora — Zur Startseite">
+        <img src="../favicon.png" alt="Nexora" class="brand-icon" width="28" height="28" loading="eager">
+        Nexora
+      </a>
+      <nav class="nav-links" id="navLinks" aria-label="Hauptnavigation">
+        <a href="index.html#services">Leistungen</a>
+        <a href="index.html#expertise">Expertise</a>
+        <a href="index.html#methode">Methode</a>
+        <a href="index.html#equipe">Team</a>
+        <a href="index.html#realisations">Referenzen</a>
+        <a href="index.html#contact">Kontakt</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="nav-cta" href="index.html#contact">Projekt starten ↗</a>
+
+        <!-- Sprachumschalter: ohne JavaScript (details/summary).
+             LOKALER MODUS: relative Links zur jeweiligen Seite in jeder Sprache;
+             in Produktion zurück auf absolute https://nexora.fr/…-URLs
+             mit querverknüpften hreflang umstellen. -->
+        <details class="lang-switch">
+          <summary aria-label="Sprache wählen">DE ▾</summary>
+          <ul class="lang-menu">
+            <li><a href="../sites-web-produits.html" lang="fr">Français</a></li>
+            <li><a href="../en/sites-web-produits.html" lang="en">English</a></li>
+            <li><a href="sites-web-produits.html" lang="de" aria-current="true">Deutsch</a></li>
+          </ul>
+        </details>
+
+        <button class="menu" type="button" id="menuBtn" aria-label="Menü öffnen" aria-expanded="false" aria-controls="navLinks">☰</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <!-- Hero -->
+  <section class="page-hero accent-cyan">
+    <div class="wrap">
+      <nav class="breadcrumb" aria-label="Brotkrumennavigation">
+        <a href="index.html" title="Zur Startseite zurückkehren">Startseite</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <a href="index.html#services" title="Alle Leistungen ansehen">Leistungen</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <span class="current" aria-current="page">Websites &amp; digitale Produkte</span>
+      </nav>
+
+      <div class="kicker">KONZEPTION &amp; FRONT-END-ENTWICKLUNG</div>
+      <h1>Schnelle, klare und nachhaltige Interfaces.</h1>
+      <p class="page-hero-lead">Wir entwickeln Websites und digitale Produkte ohne überflüssige Frameworks: semantisches HTML, modernes CSS, minimales JavaScript und eine Obsession für Core Web Vitals.</p>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <b>&lt; 0,8 s</b>
+          <span>Angestrebter Largest Contentful Paint</span>
+        </div>
+        <div class="stat-item">
+          <b>100/100</b>
+          <span>PageSpeed- &amp; CWV-Ziel</span>
+        </div>
+        <div class="stat-item">
+          <b>WCAG AA</b>
+          <span>Barrierefreiheit ab der Konzeption</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Prozess -->
+  <section class="wrap">
+    <div class="pipeline-section">
+      <div class="kicker kicker-cyan">UNSER ANSATZ</div>
+      <h2 class="h2-white">Von der Idee zum Code, ohne technische Schuld</h2>
+      <p class="lead-dim">Eine kurze, präzise Methode, um Interfaces zu liefern, die sofort laden und langfristig wartbar bleiben.</p>
+
+      <div class="process-steps">
+        <div class="process-box">
+          <h3>01. Abgrenzung</h3>
+          <p>Business-Ziele, User Journeys, technische Einschränkungen und Inhalts-Prioritäten.</p>
+        </div>
+        <div class="process-box">
+          <h3>02. Architektur</h3>
+          <p>Semantische HTML-Struktur, Seitenstruktur, Schema.org und barrierefreie Mockups.</p>
+        </div>
+        <div class="process-box">
+          <h3>03. Integration</h3>
+          <p>Natives CSS, asynchrones Vanilla-JS, optimierte Bilder und Zero-JS, wo möglich.</p>
+        </div>
+        <div class="process-box">
+          <h3>04. Messung</h3>
+          <p>Lighthouse-Audits, Barrierefreiheitstests und Validierung der Core Web Vitals.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Angebote -->
+  <section class="section">
+    <div class="wrap">
+      <div class="kicker">WAS WIR LIEFERN</div>
+      <h2>Maßgeschneiderte Websites und Produkte.</h2>
+
+      <div class="data-grid">
+        <article class="data-card">
+          <div>
+            <h3>Unternehmens- &amp; Corporate-Websites</h3>
+            <p>Eine klare, schnelle und glaubwürdige Präsenz. Leichte Seiten, strukturierte Inhalte und Conversion-Optimierung ab dem ersten Bildschirm.</p>
+          </div>
+          <span class="badge">Native Performance</span>
+        </article>
+        <article class="data-card">
+          <div>
+            <h3>SaaS-Produkte &amp; Interfaces</h3>
+            <p>Dashboards, interne Tools oder kompakte Webanwendungen, konzipiert für Geschwindigkeit und Lesbarkeit.</p>
+          </div>
+          <span class="badge">Handlungsorientierte UX</span>
+        </article>
+        <article class="data-card">
+          <div>
+            <h3>Relaunch &amp; Modernisierung</h3>
+            <p>Beseitigung technischer Schulden, Migration weg von schweren CMS und Wiederaufbau einer sauberen HTML/CSS-Basis.</p>
+          </div>
+          <span class="badge">Kein Framework erzwungen</span>
+        </article>
+      </div>
+
+      <div class="gov-card gov-card-cyan">
+        <div class="gov-card-main">
+          <h3>Digitale Sparsamkeit &amp; Wartbarkeit</h3>
+          <p>Weniger Code, weniger Abhängigkeiten, weniger Wartung. Jede Komponente ist darauf ausgelegt zu halten und für jeden Entwickler verständlich zu bleiben.</p>
+        </div>
+        <div class="gov-card-badge">
+          <span class="badge badge-cyan">HTML5 · CSS · Vanilla-JS</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-light">
+    <div class="wrap">
+      <div class="kicker">HÄUFIG GESTELLTE FRAGEN</div>
+      <h2>Klarheit über die Konzeption Ihrer Interfaces.</h2>
+
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3>Arbeiten Sie mit Frameworks (React, Vue, Next…)?</h3>
+          <p>Nur wenn die Komplexität des Produkts es tatsächlich rechtfertigt. In den meisten Fällen genügen semantisches HTML + modernes CSS + etwas JS — mit deutlich besseren Leistungen.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Wie lange dauert eine Unternehmens-Website?</h3>
+          <p>Eine gut abgegrenzte Website mit 5 bis 10 Seiten kann in 3 bis 6 Wochen geliefert werden, inklusive Audits und Tests.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Übernehmen Sie Hosting und Deployment?</h3>
+          <p>Ja. Wir richten schnelles Edge-/Serverless-Hosting, Sicherheits-Header (CSP etc.) und alle erforderlichen Weiterleitungen ein.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Wird die Website barrierefrei sein (WCAG)?</h3>
+          <p>Ja. Kontraste, Tastaturnavigation, ARIA-Attribute und semantische Struktur werden von Anfang an in der Konzeption integriert — nicht nachträglich angehängt.</p>
+        </div>
+      </div>
+
+      <div class="cta-box">
+        <h2>Eine Website oder ein Produkt zu konzipieren?</h2>
+        <p>Sprechen wir über Ihre Ziele, Ihre Einschränkungen und die beste Architektur, um Ihre Core-Web-Vitals-Ziele zu erreichen.</p>
+        <a class="btn btn-light" href="index.html#contact">Austausch vereinbaren ↗</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div>
+      <strong class="footer-brand">Nexora</strong> · Strategie, Design &amp; Technologie · Lille, Frankreich
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Startseite</a>
+      <a href="index.html#services">Leistungen</a>
+      <a href="sites-web-produits.html">Websites &amp; digitale Produkte</a>
+      <a href="index.html#contact">Kontakt</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Zurück-nach-oben-Button (globale Styles in theme.css §14) -->
+<button id="scrollToTopBtn" aria-label="Zum Seitenanfang zurückkehren" title="Nach oben">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M18 15l-6-6-6 6"/>
+  </svg>
+</button>
+
+<script src="../js/site.js" defer></script>
+</body>
+</html>
