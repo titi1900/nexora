@@ -937,7 +937,8 @@ label {
 }
 
 input,
-textarea {
+textarea,
+select {
   width: 100%;
   border: 1px solid #e0dcd4;
   background: #fdfcfa;
@@ -947,8 +948,19 @@ textarea {
   transition: border-color 0.2s ease;
 }
 
+select {
+  appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, #8a98ab 50%),
+                    linear-gradient(135deg, #8a98ab 50%, transparent 50%);
+  background-position: calc(100% - 20px) 50%, calc(100% - 15px) 50%;
+  background-size: 5px 5px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
 input:focus,
-textarea:focus {
+textarea:focus,
+select:focus {
   border-color: var(--blue);
   outline: none;
   box-shadow: var(--focus);

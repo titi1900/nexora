@@ -1020,6 +1020,17 @@
           <input id="name" name="name" autocomplete="name" required placeholder="Votre nom" maxlength="120">
           <label for="email">Email</label>
           <input id="email" name="email" type="email" autocomplete="email" required placeholder="vous@entreprise.fr" maxlength="180">
+          <!-- Attribution first-party (optionnel) : mesure SEO/GEO,
+               canal d'origine du contact, sans tracker tiers (RGPD). -->
+          <label for="source">Comment nous avez-vous connus ?</label>
+          <select id="source" name="source">
+            <option value="" selected>Sélectionnez (optionnel)</option>
+            <option value="search">Moteur de recherche (Google…)</option>
+            <option value="ai">Assistant IA (ChatGPT, Perplexity, Claude…)</option>
+            <option value="social">Réseau social (LinkedIn…)</option>
+            <option value="referral">Bouche à oreille / recommandation</option>
+            <option value="other">Autre</option>
+          </select>
           <label for="message">Projet</label>
           <textarea id="message" name="message" required placeholder="Parlez-nous de votre projet…" maxlength="4000"></textarea>
           <button class="submit" type="submit" id="submitBtn">Envoyer le message ↗</button>
