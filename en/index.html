@@ -1022,6 +1022,17 @@
           <input id="name" name="name" autocomplete="name" required placeholder="Your name" maxlength="120">
           <label for="email">Email</label>
           <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@company.com" maxlength="180">
+          <!-- First-party attribution (optional): SEO/GEO measurement,
+               origin channel of the contact, no third-party tracker (GDPR). -->
+          <label for="source">How did you hear about us?</label>
+          <select id="source" name="source">
+            <option value="" selected>Select (optional)</option>
+            <option value="search">Search engine (Google…)</option>
+            <option value="ai">AI assistant (ChatGPT, Perplexity, Claude…)</option>
+            <option value="social">Social network (LinkedIn…)</option>
+            <option value="referral">Word of mouth / recommendation</option>
+            <option value="other">Other</option>
+          </select>
           <label for="message">Project</label>
           <textarea id="message" name="message" required placeholder="Tell us about your project…" maxlength="4000"></textarea>
           <button class="submit" type="submit" id="submitBtn">Send message ↗</button>

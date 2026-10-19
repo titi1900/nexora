@@ -1022,6 +1022,17 @@
           <input id="name" name="name" autocomplete="name" required placeholder="Ihr Name" maxlength="120">
           <label for="email">E-Mail</label>
           <input id="email" name="email" type="email" autocomplete="email" required placeholder="sie@firma.de" maxlength="180">
+          <!-- First-Party-Attribution (optional): SEO/GEO-Messung,
+               Herkunftskanal des Kontakts, ohne Drittanbieter-Tracker (DSGVO). -->
+          <label for="source">Wie haben Sie uns gefunden?</label>
+          <select id="source" name="source">
+            <option value="" selected>Auswählen (optional)</option>
+            <option value="search">Suchmaschine (Google…)</option>
+            <option value="ai">KI-Assistent (ChatGPT, Perplexity, Claude…)</option>
+            <option value="social">Soziales Netzwerk (LinkedIn…)</option>
+            <option value="referral">Weiterempfehlung</option>
+            <option value="other">Andere</option>
+          </select>
           <label for="message">Projekt</label>
           <textarea id="message" name="message" required placeholder="Erzählen Sie uns von Ihrem Projekt…" maxlength="4000"></textarea>
           <button class="submit" type="submit" id="submitBtn">Nachricht senden ↗</button>
