@@ -631,11 +631,23 @@
   .about .visual { min-height: 320px; }
 
   .principles { grid-template-columns: repeat(2, 1fr); margin-top: 30px; }
+
+  /* .projects et .contact sont redéfinis en grille dans le style local :
+     ces règles locales écrasent celles de theme.css (chargée avant),
+     y compris ses media queries. On les empile donc ici explicitement,
+     sinon la section contact s'affiche côte à côte sur smartphone. */
+  .projects { grid-template-columns: 1fr; gap: 14px; }
+  .project.large { grid-row: auto; min-height: 310px; }
+  .contact { grid-template-columns: 1fr; gap: 40px; }
 }
 
 @media (max-width: 640px) {
   .principles { grid-template-columns: 1fr; }
   .ticks { grid-template-columns: 1fr; }
+  /* Le visuel "dashboard" est empilé ≤900px : ses 2 colonnes internes
+     deviennent illisibles sur petit écran, on les empile aussi. */
+  .dash-grid { grid-template-columns: 1fr; }
+  .mini.big { min-height: auto; }
 
   .team-grid { grid-template-columns: 1fr 1fr; gap: 14px; }
   .team-avatar { height: 140px; }
