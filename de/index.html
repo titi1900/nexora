@@ -702,33 +702,101 @@
 </header>
 
 <main id="main">
-  <!-- Hero -->
-  <section class="hero">
-    <div class="wrap hero-inner">
-      <div>
-        <div class="eyebrow">Digitale Agentur · Lille</div>
-        <h1>Digitale Erlebnisse, die <span class="gradient">schnell</span>, klar und leistungsstark sind.</h1>
-        <p class="hero-lead">Wir gestalten Websites und digitale Produkte, die schnell laden, leicht verständlich sind und besser konvertieren — ohne unnötige Komplexität.</p>
-        <div class="actions">
-          <a class="btn btn-light" href="#services">Unsere Leistungen entdecken ↗</a>
-          <a class="btn btn-ghost" href="#realisations">Unsere Projekte ansehen</a>
-        </div>
-        <div class="hero-note">
-          <div><strong>Performance</strong>Leichtes HTML · Natives CSS</div>
-          <div><strong>Sichtbarkeit</strong>SEO · Strukturierte Daten</div>
-          <div><strong>Klarheit</strong>Lesbarer Inhalt · Semantisches Markup</div>
+  <!-- Hero: Karussell mit 3 Vollbild-Slides (horizontales Scroll-Snap-
+       Muster). Der Hero wird zu einer internen Slideshow; der Rest der
+       Seite scrollt darunter normal weiter. Styles: theme.css (.hero-track,
+       .hero-slide); Logik: site.js (Buttons, Tastatur, Swipe, aria). -->
+  <section class="hero hero-slides" aria-roledescription="Karussell" aria-label="Nexora-Präsentation in 3 Slides">
+    <div class="hero-track" id="heroTrack" tabindex="0" aria-label="Startseiten-Slides — horizontal scrollen">
+
+      <!-- Slide 1: Haupt-Botschaft (bestehender Hero-Inhalt) -->
+      <div class="hero-slide" role="group" aria-roledescription="slide" aria-label="Slide 1 von 3: Botschaft">
+        <div class="wrap hero-inner">
+          <div>
+            <div class="eyebrow">Digitale Agentur · Lille</div>
+            <h1>Digitale Erlebnisse, die <span class="gradient">schnell</span>, klar und leistungsstark sind.</h1>
+            <p class="hero-lead">Wir gestalten Websites und digitale Produkte, die schnell laden, leicht verständlich sind und besser konvertieren — ohne unnötige Komplexität.</p>
+            <div class="actions">
+              <a class="btn btn-light" href="#services">Unsere Leistungen entdecken ↗</a>
+              <a class="btn btn-ghost" href="#realisations">Unsere Projekte ansehen</a>
+            </div>
+            <div class="hero-note">
+              <div><strong>Performance</strong>Leichtes HTML · Natives CSS</div>
+              <div><strong>Sichtbarkeit</strong>SEO · Strukturierte Daten</div>
+              <div><strong>Klarheit</strong>Lesbarer Inhalt · Semantisches Markup</div>
+            </div>
+          </div>
+          <div class="orbital" aria-hidden="true">
+            <div class="ring"></div>
+            <div class="ring r2"></div>
+            <div class="ring r3"></div>
+            <div class="core"><span>N.</span></div>
+            <div class="float-card fc1"><b>01 · Architektur</b>Eine einfache, dauerhafte Basis.</div>
+            <div class="float-card fc2"><b>02 · Design</b>Eine Identität, die atmet.</div>
+            <div class="float-card fc3"><b>03 · Data</b>Inhalte, die leicht verständlich sind.</div>
+          </div>
         </div>
       </div>
-      <div class="orbital" aria-hidden="true">
-        <div class="ring"></div>
-        <div class="ring r2"></div>
-        <div class="ring r3"></div>
-        <div class="core"><span>N.</span></div>
-        <div class="float-card fc1"><b>01 · Architektur</b>Eine einfache, dauerhafte Basis.</div>
-        <div class="float-card fc2"><b>02 · Design</b>Eine Identität, die atmet.</div>
-        <div class="float-card fc3"><b>03 · Data</b>Inhalte, die leicht verständlich sind.</div>
+
+      <!-- Slide 2: das Wesentliche unserer Leistungen -->
+      <div class="hero-slide" role="group" aria-roledescription="slide" aria-label="Slide 2 von 3: Leistungen">
+        <div class="wrap hero-inner hero-inner-center">
+          <div>
+            <div class="eyebrow">Was wir tun</div>
+            <h2 class="hero-slide-title">Drei Kompetenzfelder, ein Anspruch.</h2>
+            <div class="hero-cards">
+              <div class="hero-card">
+                <h3>Websites &amp; Produkte</h3>
+                <p>Schnelle, schlichte und dauerhafte Websites und Web-Apps, designed zum Konvertieren.</p>
+              </div>
+              <div class="hero-card">
+                <h3>SEO &amp; KI-Sichtbarkeit</h3>
+                <p>Semantische Struktur, strukturierte Daten und Antworten für generative Maschinen.</p>
+              </div>
+              <div class="hero-card">
+                <h3>Data &amp; Analytics</h3>
+                <p>Lesbare First-Party-Messung: Nutzung verstehen, ohne Seiten zu belasten.</p>
+              </div>
+            </div>
+            <div class="actions">
+              <a class="btn btn-light" href="#services">Unsere Leistungen entdecken ↗</a>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <!-- Slide 3: Methode, Ergebnisse und Handlungsaufruf -->
+      <div class="hero-slide" role="group" aria-roledescription="slide" aria-label="Slide 3 von 3: Methode und Kontakt">
+        <div class="wrap hero-inner hero-inner-center">
+          <div>
+            <div class="eyebrow">Unsere Methode</div>
+            <h2 class="hero-slide-title">Einfach, messbar, ohne Schulden.</h2>
+            <div class="hero-cards hero-cards-kpi">
+              <div class="hero-card">
+                <div class="hero-kpi">≥ 95</div>
+                <p>Lighthouse-Zielwert für jedes Ergebnis.</p>
+              </div>
+              <div class="hero-card">
+                <div class="hero-kpi">100 %</div>
+                <p>Natives HTML und CSS, null Framework.</p>
+              </div>
+              <div class="hero-card">
+                <div class="hero-kpi">3</div>
+                <p>Sprachen aus derselben Codebasis.</p>
+              </div>
+            </div>
+            <div class="actions">
+              <a class="btn btn-light" href="#contact">Über Ihr Projekt sprechen ↗</a>
+              <a class="btn btn-ghost" href="#methode">Unsere Methode ansehen</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
+    <!-- Navigations-Buttons (an den Enden automatisch ausgeblendet durch site.js) -->
+    <button class="hero-nav hero-prev" type="button" id="heroPrevBtn" aria-label="Vorherige Slide" aria-controls="heroTrack">❮</button>
+    <button class="hero-nav hero-next" type="button" id="heroNextBtn" aria-label="Nächste Slide" aria-controls="heroTrack">❯</button>
   </section>
 
   <!-- Services -->

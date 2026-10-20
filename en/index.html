@@ -702,33 +702,101 @@
 </header>
 
 <main id="main">
-  <!-- Hero -->
-  <section class="hero">
-    <div class="wrap hero-inner">
-      <div>
-        <div class="eyebrow">Digital agency · Lille</div>
-        <h1>Digital experiences that are <span class="gradient">fast</span>, clear and high-performing.</h1>
-        <p class="hero-lead">We design websites and digital products that load fast, are easy to understand and convert better — without unnecessary complexity.</p>
-        <div class="actions">
-          <a class="btn btn-light" href="#services">Explore our services ↗</a>
-          <a class="btn btn-ghost" href="#realisations">See our work</a>
-        </div>
-        <div class="hero-note">
-          <div><strong>Performance</strong>Lightweight HTML · Native CSS</div>
-          <div><strong>Visibility</strong>SEO · Structured data</div>
-          <div><strong>Clarity</strong>Readable content · Semantic markup</div>
+  <!-- Hero: full-width 3-slide carousel (horizontal scroll-snap
+       pattern). The hero becomes an internal slideshow; the rest of
+       the page scrolls normally below. Styles: theme.css (.hero-track,
+       .hero-slide); logic: site.js (buttons, keyboard, swipe, aria). -->
+  <section class="hero hero-slides" aria-roledescription="carousel" aria-label="Nexora presentation in 3 slides">
+    <div class="hero-track" id="heroTrack" tabindex="0" aria-label="Home slides — horizontal scrolling">
+
+      <!-- Slide 1: main hook (existing hero content) -->
+      <div class="hero-slide" role="group" aria-roledescription="slide" aria-label="Slide 1 of 3: Hook">
+        <div class="wrap hero-inner">
+          <div>
+            <div class="eyebrow">Digital agency · Lille</div>
+            <h1>Digital experiences that are <span class="gradient">fast</span>, clear and high-performing.</h1>
+            <p class="hero-lead">We design websites and digital products that load fast, are easy to understand and convert better — without unnecessary complexity.</p>
+            <div class="actions">
+              <a class="btn btn-light" href="#services">Explore our services ↗</a>
+              <a class="btn btn-ghost" href="#realisations">See our work</a>
+            </div>
+            <div class="hero-note">
+              <div><strong>Performance</strong>Lightweight HTML · Native CSS</div>
+              <div><strong>Visibility</strong>SEO · Structured data</div>
+              <div><strong>Clarity</strong>Readable content · Semantic markup</div>
+            </div>
+          </div>
+          <div class="orbital" aria-hidden="true">
+            <div class="ring"></div>
+            <div class="ring r2"></div>
+            <div class="ring r3"></div>
+            <div class="core"><span>N.</span></div>
+            <div class="float-card fc1"><b>01 · Architecture</b>A simple, durable foundation.</div>
+            <div class="float-card fc2"><b>02 · Design</b>An identity that breathes.</div>
+            <div class="float-card fc3"><b>03 · Data</b>Content that is easy to understand.</div>
+          </div>
         </div>
       </div>
-      <div class="orbital" aria-hidden="true">
-        <div class="ring"></div>
-        <div class="ring r2"></div>
-        <div class="ring r3"></div>
-        <div class="core"><span>N.</span></div>
-        <div class="float-card fc1"><b>01 · Architecture</b>A simple, durable foundation.</div>
-        <div class="float-card fc2"><b>02 · Design</b>An identity that breathes.</div>
-        <div class="float-card fc3"><b>03 · Data</b>Content that is easy to understand.</div>
+
+      <!-- Slide 2: the essentials of our services -->
+      <div class="hero-slide" role="group" aria-roledescription="slide" aria-label="Slide 2 of 3: Services">
+        <div class="wrap hero-inner hero-inner-center">
+          <div>
+            <div class="eyebrow">What we do</div>
+            <h2 class="hero-slide-title">Three areas of expertise, one standard.</h2>
+            <div class="hero-cards">
+              <div class="hero-card">
+                <h3>Websites &amp; products</h3>
+                <p>Fast, sober and durable showcases and web apps, designed to convert.</p>
+              </div>
+              <div class="hero-card">
+                <h3>SEO &amp; AI visibility</h3>
+                <p>Semantic structure, structured data and answers for generative engines.</p>
+              </div>
+              <div class="hero-card">
+                <h3>Data &amp; analytics</h3>
+                <p>Readable first-party measurement: understand usage without weighing pages down.</p>
+              </div>
+            </div>
+            <div class="actions">
+              <a class="btn btn-light" href="#services">Explore our services ↗</a>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <!-- Slide 3: method, results and call to action -->
+      <div class="hero-slide" role="group" aria-roledescription="slide" aria-label="Slide 3 of 3: Method and contact">
+        <div class="wrap hero-inner hero-inner-center">
+          <div>
+            <div class="eyebrow">Our method</div>
+            <h2 class="hero-slide-title">Simple, measurable, debt-free.</h2>
+            <div class="hero-cards hero-cards-kpi">
+              <div class="hero-card">
+                <div class="hero-kpi">≥ 95</div>
+                <p>Lighthouse target on every deliverable.</p>
+              </div>
+              <div class="hero-card">
+                <div class="hero-kpi">100 %</div>
+                <p>Native HTML and CSS, zero framework.</p>
+              </div>
+              <div class="hero-card">
+                <div class="hero-kpi">3</div>
+                <p>languages served from the same codebase.</p>
+              </div>
+            </div>
+            <div class="actions">
+              <a class="btn btn-light" href="#contact">Let's talk about your project ↗</a>
+              <a class="btn btn-ghost" href="#methode">See our method</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
+    <!-- Navigation buttons (auto-hidden at the ends by site.js) -->
+    <button class="hero-nav hero-prev" type="button" id="heroPrevBtn" aria-label="Previous slide" aria-controls="heroTrack">❮</button>
+    <button class="hero-nav hero-next" type="button" id="heroNextBtn" aria-label="Next slide" aria-controls="heroTrack">❯</button>
   </section>
 
   <!-- Services -->

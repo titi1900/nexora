@@ -7,6 +7,7 @@
    2. Bouton retour en haut (#scrollToTopBtn, visible > 400 px)
    3. Carrousel de services accessible avec autoscroll
       (section #services des index FR / EN / DE)
+   4. Carrousel hero en 3 slides (index.html, #heroTrack)
 
    Conventions :
    - Aucune traduction côté client pour les contenus (le texte est
@@ -223,4 +224,87 @@
   }
 
   initCarousels();
+
+  /* ============================================================
+     4. CARROUSEL HERO EN 3 SLIDES (index.html)
+     Pattern : piste .hero-track en scroll-snap horizontal
+     (theme.css §21). Le JS déclenche le scroll au clic sur les
+     flèches, synchronise l'index sur l'événement scroll (le swipe
+     tactile et le drag souris sont natifs), masque les flèches aux
+     extrémités et gère les flèches clavier — uniquement quand le
+     hero est visible, pour ne pas parasiter le scroll de la page.
+     ============================================================ */
+
+  function initHeroSlides() {
+    var track = document.getElementById('heroTrack');
+    var prev  = document.getElementById('heroPrevBtn');
+    var next  = document.getElementById('heroNextBtn');
+    if (!track) return;
+
+    var slides = track.querySelectorAll('.hero-slide');
+    var total = slides.length;
+    var current = 0;
+
+    function goToSlide(index) {
+      track.scrollTo({
+        left: index * track.clientWidth,
+        behavior: reduce ? 'auto' : 'smooth'
+      });
+    }
+
+    /* Masque la flèche inutile aux extrémités */
+    function updateButtons() {
+      if (prev) prev.hidden = (current === 0);
+      if (next) next.hidden = (current === total - 1);
+    }
+
+    if (next) next.addEventListener('click', function () {
+      if (current < total - 1) { current++; goToSlide(current); }
+    });
+
+    if (prev) prev.addEventListener('click', function () {
+      if (current > 0) { current--; goToSlide(current); }
+    });
+
+    /* Flèches clavier : seulement quand le hero est à l'écran
+       (sinon les touches gauche/droite parasiteraient toute la page) */
+    var heroVisible = true;
+
+    function syncVisibility() {
+      var rect = track.getBoundingClientRect();
+      heroVisible = rect.bottom > 0 && rect.top < window.innerHeight;
+    }
+
+    document.addEventListener('keydown', function (e) {
+      if (!heroVisible) return;
+      if (e.key === 'ArrowRight' && current < total - 1) {
+        current++; goToSlide(current);
+      }
+      if (e.key === 'ArrowLeft' && current > 0) {
+        current--; goToSlide(current);
+      }
+    });
+
+    /* Synchronise l'index quand l'utilisateur swipe ou drag
+       (rAF : l'événement scroll peut être très fréquent) */
+    var queued = false;
+
+    track.addEventListener('scroll', function () {
+      if (queued) return;
+      queued = true;
+      requestAnimationFrame(function () {
+        current = Math.round(track.scrollLeft / track.clientWidth);
+        updateButtons();
+        queued = false;
+      });
+    }, { passive: true });
+
+    window.addEventListener('scroll', syncVisibility, { passive: true });
+    window.addEventListener('resize', updateButtons);
+
+    syncVisibility();
+    updateButtons();
+  }
+
+  initHeroSlides();
 })();
